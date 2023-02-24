@@ -257,7 +257,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -415,8 +415,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int) localVarResponse.StatusCode;
@@ -519,8 +519,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -610,19 +610,19 @@ namespace CyberSource.Api
                 localVarQueryParams.Add("organizationId", Configuration.ApiClient.ParameterToString(organizationId)); // query parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int) localVarResponse.StatusCode;
@@ -713,19 +713,19 @@ namespace CyberSource.Api
                 localVarQueryParams.Add("organizationId", Configuration.ApiClient.ParameterToString(organizationId)); // query parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -874,19 +874,19 @@ namespace CyberSource.Api
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int) localVarResponse.StatusCode;
@@ -1037,19 +1037,19 @@ namespace CyberSource.Api
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;

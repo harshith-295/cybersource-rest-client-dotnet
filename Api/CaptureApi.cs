@@ -36,7 +36,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>PtsV2PaymentsCapturesPost201Response</returns>
-        PtsV2PaymentsCapturesPost201Response CapturePayment (CapturePaymentRequest capturePaymentRequest, string id);
+        PtsV2PaymentsCapturesPost201Response CapturePayment(CapturePaymentRequest capturePaymentRequest, string id);
 
         /// <summary>
         /// Capture a Payment
@@ -48,7 +48,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>ApiResponse of PtsV2PaymentsCapturesPost201Response</returns>
-        ApiResponse<PtsV2PaymentsCapturesPost201Response> CapturePaymentWithHttpInfo (CapturePaymentRequest capturePaymentRequest, string id);
+        ApiResponse<PtsV2PaymentsCapturesPost201Response> CapturePaymentWithHttpInfo(CapturePaymentRequest capturePaymentRequest, string id);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -61,7 +61,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>Task of PtsV2PaymentsCapturesPost201Response</returns>
-        System.Threading.Tasks.Task<PtsV2PaymentsCapturesPost201Response> CapturePaymentAsync (CapturePaymentRequest capturePaymentRequest, string id);
+        System.Threading.Tasks.Task<PtsV2PaymentsCapturesPost201Response> CapturePaymentAsync(CapturePaymentRequest capturePaymentRequest, string id);
 
         /// <summary>
         /// Capture a Payment
@@ -73,7 +73,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsCapturesPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PtsV2PaymentsCapturesPost201Response>> CapturePaymentAsyncWithHttpInfo (CapturePaymentRequest capturePaymentRequest, string id);
+        System.Threading.Tasks.Task<ApiResponse<PtsV2PaymentsCapturesPost201Response>> CapturePaymentAsyncWithHttpInfo(CapturePaymentRequest capturePaymentRequest, string id);
         #endregion Asynchronous Operations
     }
 
@@ -137,7 +137,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -201,7 +201,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -221,7 +221,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>PtsV2PaymentsCapturesPost201Response</returns>
-        public PtsV2PaymentsCapturesPost201Response CapturePayment (CapturePaymentRequest capturePaymentRequest, string id)
+        public PtsV2PaymentsCapturesPost201Response CapturePayment(CapturePaymentRequest capturePaymentRequest, string id)
         {
             logger.Debug("CALLING API \"CapturePayment\" STARTED");
             this.SetStatusCode(null);
@@ -238,7 +238,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>ApiResponse of PtsV2PaymentsCapturesPost201Response</returns>
-        public ApiResponse< PtsV2PaymentsCapturesPost201Response > CapturePaymentWithHttpInfo (CapturePaymentRequest capturePaymentRequest, string id)
+        public ApiResponse<PtsV2PaymentsCapturesPost201Response> CapturePaymentWithHttpInfo(CapturePaymentRequest capturePaymentRequest, string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -304,11 +304,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -322,7 +322,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<PtsV2PaymentsCapturesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PtsV2PaymentsCapturesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2PaymentsCapturesPost201Response))); // Return statement
+                (PtsV2PaymentsCapturesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2PaymentsCapturesPost201Response))); // Return statement
         }
 
         /// <summary>
@@ -332,7 +332,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>Task of PtsV2PaymentsCapturesPost201Response</returns>
-        public async System.Threading.Tasks.Task<PtsV2PaymentsCapturesPost201Response> CapturePaymentAsync (CapturePaymentRequest capturePaymentRequest, string id)
+        public async System.Threading.Tasks.Task<PtsV2PaymentsCapturesPost201Response> CapturePaymentAsync(CapturePaymentRequest capturePaymentRequest, string id)
         {
             logger.Debug("CALLING API \"CapturePaymentAsync\" STARTED");
             this.SetStatusCode(null);
@@ -350,7 +350,7 @@ namespace CyberSource.Api
         /// <param name="capturePaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request. This ID links the capture to the payment. </param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsCapturesPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PtsV2PaymentsCapturesPost201Response>> CapturePaymentAsyncWithHttpInfo (CapturePaymentRequest capturePaymentRequest, string id)
+        public async System.Threading.Tasks.Task<ApiResponse<PtsV2PaymentsCapturesPost201Response>> CapturePaymentAsyncWithHttpInfo(CapturePaymentRequest capturePaymentRequest, string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -416,8 +416,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -434,7 +434,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<PtsV2PaymentsCapturesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PtsV2PaymentsCapturesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2PaymentsCapturesPost201Response))); // Return statement
+                (PtsV2PaymentsCapturesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2PaymentsCapturesPost201Response))); // Return statement
         }
     }
 }

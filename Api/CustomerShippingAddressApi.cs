@@ -37,7 +37,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns></returns>
-        void DeleteCustomerShippingAddress (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        void DeleteCustomerShippingAddress(string customerTokenId, string shippingAddressTokenId, string profileId = null);
 
         /// <summary>
         /// Delete a Customer Shipping Address
@@ -50,7 +50,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteCustomerShippingAddressWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        ApiResponse<Object> DeleteCustomerShippingAddressWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null);
         /// <summary>
         /// Retrieve a Customer Shipping Address
         /// </summary>
@@ -62,7 +62,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        Tmsv2customersEmbeddedDefaultShippingAddress GetCustomerShippingAddress (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        Tmsv2customersEmbeddedDefaultShippingAddress GetCustomerShippingAddress(string customerTokenId, string shippingAddressTokenId, string profileId = null);
 
         /// <summary>
         /// Retrieve a Customer Shipping Address
@@ -75,7 +75,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null);
         /// <summary>
         /// List Shipping Addresses for a Customer
         /// </summary>
@@ -88,7 +88,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>ShippingAddressListForCustomer</returns>
-        ShippingAddressListForCustomer GetCustomerShippingAddressesList (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        ShippingAddressListForCustomer GetCustomerShippingAddressesList(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
 
         /// <summary>
         /// List Shipping Addresses for a Customer
@@ -102,7 +102,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>ApiResponse of ShippingAddressListForCustomer</returns>
-        ApiResponse<ShippingAddressListForCustomer> GetCustomerShippingAddressesListWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        ApiResponse<ShippingAddressListForCustomer> GetCustomerShippingAddressesListWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
         /// <summary>
         /// Update a Customer Shipping Address
         /// </summary>
@@ -116,7 +116,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        Tmsv2customersEmbeddedDefaultShippingAddress PatchCustomersShippingAddress (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
+        Tmsv2customersEmbeddedDefaultShippingAddress PatchCustomersShippingAddress(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
 
         /// <summary>
         /// Update a Customer Shipping Address
@@ -131,7 +131,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressWithHttpInfo (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
+        ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressWithHttpInfo(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
         /// <summary>
         /// Create a Customer Shipping Address
         /// </summary>
@@ -143,7 +143,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        Tmsv2customersEmbeddedDefaultShippingAddress PostCustomerShippingAddress (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
+        Tmsv2customersEmbeddedDefaultShippingAddress PostCustomerShippingAddress(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
 
         /// <summary>
         /// Create a Customer Shipping Address
@@ -156,7 +156,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressWithHttpInfo (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
+        ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressWithHttpInfo(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -170,7 +170,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteCustomerShippingAddressAsync (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        System.Threading.Tasks.Task DeleteCustomerShippingAddressAsync(string customerTokenId, string shippingAddressTokenId, string profileId = null);
 
         /// <summary>
         /// Delete a Customer Shipping Address
@@ -183,7 +183,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerShippingAddressAsyncWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerShippingAddressAsyncWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null);
         /// <summary>
         /// Retrieve a Customer Shipping Address
         /// </summary>
@@ -195,7 +195,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressAsync (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressAsync(string customerTokenId, string shippingAddressTokenId, string profileId = null);
 
         /// <summary>
         /// Retrieve a Customer Shipping Address
@@ -208,7 +208,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultShippingAddress)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> GetCustomerShippingAddressAsyncWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null);
+        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> GetCustomerShippingAddressAsyncWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null);
         /// <summary>
         /// List Shipping Addresses for a Customer
         /// </summary>
@@ -221,7 +221,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of ShippingAddressListForCustomer</returns>
-        System.Threading.Tasks.Task<ShippingAddressListForCustomer> GetCustomerShippingAddressesListAsync (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        System.Threading.Tasks.Task<ShippingAddressListForCustomer> GetCustomerShippingAddressesListAsync(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
 
         /// <summary>
         /// List Shipping Addresses for a Customer
@@ -235,7 +235,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of ApiResponse (ShippingAddressListForCustomer)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ShippingAddressListForCustomer>> GetCustomerShippingAddressesListAsyncWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        System.Threading.Tasks.Task<ApiResponse<ShippingAddressListForCustomer>> GetCustomerShippingAddressesListAsyncWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
         /// <summary>
         /// Update a Customer Shipping Address
         /// </summary>
@@ -249,7 +249,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressAsync (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
+        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressAsync(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
 
         /// <summary>
         /// Update a Customer Shipping Address
@@ -264,7 +264,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultShippingAddress)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PatchCustomersShippingAddressAsyncWithHttpInfo (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
+        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PatchCustomersShippingAddressAsyncWithHttpInfo(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null);
         /// <summary>
         /// Create a Customer Shipping Address
         /// </summary>
@@ -276,7 +276,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressAsync (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
+        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressAsync(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
 
         /// <summary>
         /// Create a Customer Shipping Address
@@ -289,7 +289,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultShippingAddress)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PostCustomerShippingAddressAsyncWithHttpInfo (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
+        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PostCustomerShippingAddressAsyncWithHttpInfo(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null);
         #endregion Asynchronous Operations
     }
 
@@ -353,7 +353,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -417,7 +417,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -438,7 +438,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns></returns>
-        public void DeleteCustomerShippingAddress (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public void DeleteCustomerShippingAddress(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"DeleteCustomerShippingAddress\" STARTED");
             this.SetStatusCode(null);
@@ -453,7 +453,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteCustomerShippingAddressWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public ApiResponse<Object> DeleteCustomerShippingAddressWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -508,22 +508,22 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.DELETE == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Delete == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Delete, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -549,7 +549,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteCustomerShippingAddressAsync (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task DeleteCustomerShippingAddressAsync(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"DeleteCustomerShippingAddressAsync\" STARTED");
             this.SetStatusCode(null);
@@ -565,7 +565,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerShippingAddressAsyncWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerShippingAddressAsyncWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -620,19 +620,19 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.DELETE == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Delete == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Delete, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -660,7 +660,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public Tmsv2customersEmbeddedDefaultShippingAddress GetCustomerShippingAddress (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public Tmsv2customersEmbeddedDefaultShippingAddress GetCustomerShippingAddress(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"GetCustomerShippingAddress\" STARTED");
             this.SetStatusCode(null);
@@ -678,7 +678,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public ApiResponse< Tmsv2customersEmbeddedDefaultShippingAddress > GetCustomerShippingAddressWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -733,22 +733,22 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -762,7 +762,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultShippingAddress) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
+                (Tmsv2customersEmbeddedDefaultShippingAddress)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
         }
 
         /// <summary>
@@ -773,7 +773,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressAsync (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> GetCustomerShippingAddressAsync(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"GetCustomerShippingAddressAsync\" STARTED");
             this.SetStatusCode(null);
@@ -792,7 +792,7 @@ namespace CyberSource.Api
         /// <param name="shippingAddressTokenId">The TokenId of an shipping address.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultShippingAddress)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> GetCustomerShippingAddressAsyncWithHttpInfo (string customerTokenId, string shippingAddressTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> GetCustomerShippingAddressAsyncWithHttpInfo(string customerTokenId, string shippingAddressTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -847,19 +847,19 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -876,7 +876,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultShippingAddress) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
+                (Tmsv2customersEmbeddedDefaultShippingAddress)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
         }
         /// <summary>
         /// List Shipping Addresses for a Customer 
@@ -887,7 +887,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>ShippingAddressListForCustomer</returns>
-        public ShippingAddressListForCustomer GetCustomerShippingAddressesList (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public ShippingAddressListForCustomer GetCustomerShippingAddressesList(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             logger.Debug("CALLING API \"GetCustomerShippingAddressesList\" STARTED");
             this.SetStatusCode(null);
@@ -906,7 +906,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>ApiResponse of ShippingAddressListForCustomer</returns>
-        public ApiResponse< ShippingAddressListForCustomer > GetCustomerShippingAddressesListWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public ApiResponse<ShippingAddressListForCustomer> GetCustomerShippingAddressesListWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -960,22 +960,22 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -989,7 +989,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<ShippingAddressListForCustomer>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (ShippingAddressListForCustomer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ShippingAddressListForCustomer))); // Return statement
+                (ShippingAddressListForCustomer)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ShippingAddressListForCustomer))); // Return statement
         }
 
         /// <summary>
@@ -1001,7 +1001,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of ShippingAddressListForCustomer</returns>
-        public async System.Threading.Tasks.Task<ShippingAddressListForCustomer> GetCustomerShippingAddressesListAsync (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public async System.Threading.Tasks.Task<ShippingAddressListForCustomer> GetCustomerShippingAddressesListAsync(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             logger.Debug("CALLING API \"GetCustomerShippingAddressesListAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1021,7 +1021,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of ApiResponse (ShippingAddressListForCustomer)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ShippingAddressListForCustomer>> GetCustomerShippingAddressesListAsyncWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ShippingAddressListForCustomer>> GetCustomerShippingAddressesListAsyncWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1075,19 +1075,19 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1104,7 +1104,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<ShippingAddressListForCustomer>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (ShippingAddressListForCustomer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ShippingAddressListForCustomer))); // Return statement
+                (ShippingAddressListForCustomer)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ShippingAddressListForCustomer))); // Return statement
         }
         /// <summary>
         /// Update a Customer Shipping Address 
@@ -1116,7 +1116,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public Tmsv2customersEmbeddedDefaultShippingAddress PatchCustomersShippingAddress (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
+        public Tmsv2customersEmbeddedDefaultShippingAddress PatchCustomersShippingAddress(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
         {
             logger.Debug("CALLING API \"PatchCustomersShippingAddress\" STARTED");
             this.SetStatusCode(null);
@@ -1136,7 +1136,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public ApiResponse< Tmsv2customersEmbeddedDefaultShippingAddress > PatchCustomersShippingAddressWithHttpInfo (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
+        public ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressWithHttpInfo(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1221,11 +1221,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Patch, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1239,7 +1239,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultShippingAddress) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
+                (Tmsv2customersEmbeddedDefaultShippingAddress)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
         }
 
         /// <summary>
@@ -1252,7 +1252,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressAsync (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
+        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PatchCustomersShippingAddressAsync(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
         {
             logger.Debug("CALLING API \"PatchCustomersShippingAddressAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1273,7 +1273,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultShippingAddress)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PatchCustomersShippingAddressAsyncWithHttpInfo (string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PatchCustomersShippingAddressAsyncWithHttpInfo(string customerTokenId, string shippingAddressTokenId, PatchCustomerShippingAddressRequest patchCustomerShippingAddressRequest, string profileId = null, string ifMatch = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1358,8 +1358,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Patch, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1376,7 +1376,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultShippingAddress) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
+                (Tmsv2customersEmbeddedDefaultShippingAddress)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
         }
         /// <summary>
         /// Create a Customer Shipping Address Include an existing TMS Customer token id in the request URI. * A Customer token can be created by calling: **POST *_/tms/v2/customers*** 
@@ -1386,7 +1386,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public Tmsv2customersEmbeddedDefaultShippingAddress PostCustomerShippingAddress (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
+        public Tmsv2customersEmbeddedDefaultShippingAddress PostCustomerShippingAddress(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
         {
             logger.Debug("CALLING API \"PostCustomerShippingAddress\" STARTED");
             this.SetStatusCode(null);
@@ -1404,7 +1404,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public ApiResponse< Tmsv2customersEmbeddedDefaultShippingAddress > PostCustomerShippingAddressWithHttpInfo (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
+        public ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressWithHttpInfo(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1474,11 +1474,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1492,7 +1492,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultShippingAddress) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
+                (Tmsv2customersEmbeddedDefaultShippingAddress)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
         }
 
         /// <summary>
@@ -1503,7 +1503,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultShippingAddress</returns>
-        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressAsync (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
+        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultShippingAddress> PostCustomerShippingAddressAsync(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
         {
             logger.Debug("CALLING API \"PostCustomerShippingAddressAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1522,7 +1522,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerShippingAddressRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultShippingAddress)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PostCustomerShippingAddressAsyncWithHttpInfo (string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>> PostCustomerShippingAddressAsyncWithHttpInfo(string customerTokenId, PostCustomerShippingAddressRequest postCustomerShippingAddressRequest, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1592,8 +1592,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1610,7 +1610,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultShippingAddress>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultShippingAddress) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
+                (Tmsv2customersEmbeddedDefaultShippingAddress)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultShippingAddress))); // Return statement
         }
     }
 }

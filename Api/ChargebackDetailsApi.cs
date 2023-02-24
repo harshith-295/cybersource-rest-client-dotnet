@@ -37,7 +37,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>ReportingV3ChargebackDetailsGet200Response</returns>
-        ReportingV3ChargebackDetailsGet200Response GetChargebackDetails (DateTime? startTime, DateTime? endTime, string organizationId = null);
+        ReportingV3ChargebackDetailsGet200Response GetChargebackDetails(DateTime? startTime, DateTime? endTime, string organizationId = null);
 
         /// <summary>
         /// Get Chargeback Details
@@ -50,7 +50,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>ApiResponse of ReportingV3ChargebackDetailsGet200Response</returns>
-        ApiResponse<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsWithHttpInfo (DateTime? startTime, DateTime? endTime, string organizationId = null);
+        ApiResponse<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsWithHttpInfo(DateTime? startTime, DateTime? endTime, string organizationId = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -64,7 +64,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>Task of ReportingV3ChargebackDetailsGet200Response</returns>
-        System.Threading.Tasks.Task<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsAsync (DateTime? startTime, DateTime? endTime, string organizationId = null);
+        System.Threading.Tasks.Task<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsAsync(DateTime? startTime, DateTime? endTime, string organizationId = null);
 
         /// <summary>
         /// Get Chargeback Details
@@ -77,7 +77,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>Task of ApiResponse (ReportingV3ChargebackDetailsGet200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ReportingV3ChargebackDetailsGet200Response>> GetChargebackDetailsAsyncWithHttpInfo (DateTime? startTime, DateTime? endTime, string organizationId = null);
+        System.Threading.Tasks.Task<ApiResponse<ReportingV3ChargebackDetailsGet200Response>> GetChargebackDetailsAsyncWithHttpInfo(DateTime? startTime, DateTime? endTime, string organizationId = null);
         #endregion Asynchronous Operations
     }
 
@@ -141,7 +141,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -205,7 +205,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -226,7 +226,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>ReportingV3ChargebackDetailsGet200Response</returns>
-        public ReportingV3ChargebackDetailsGet200Response GetChargebackDetails (DateTime? startTime, DateTime? endTime, string organizationId = null)
+        public ReportingV3ChargebackDetailsGet200Response GetChargebackDetails(DateTime? startTime, DateTime? endTime, string organizationId = null)
         {
             logger.Debug("CALLING API \"GetChargebackDetails\" STARTED");
             this.SetStatusCode(null);
@@ -244,7 +244,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>ApiResponse of ReportingV3ChargebackDetailsGet200Response</returns>
-        public ApiResponse< ReportingV3ChargebackDetailsGet200Response > GetChargebackDetailsWithHttpInfo (DateTime? startTime, DateTime? endTime, string organizationId = null)
+        public ApiResponse<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsWithHttpInfo(DateTime? startTime, DateTime? endTime, string organizationId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -301,22 +301,22 @@ namespace CyberSource.Api
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -330,7 +330,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<ReportingV3ChargebackDetailsGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (ReportingV3ChargebackDetailsGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportingV3ChargebackDetailsGet200Response))); // Return statement
+                (ReportingV3ChargebackDetailsGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportingV3ChargebackDetailsGet200Response))); // Return statement
         }
 
         /// <summary>
@@ -341,7 +341,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>Task of ReportingV3ChargebackDetailsGet200Response</returns>
-        public async System.Threading.Tasks.Task<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsAsync (DateTime? startTime, DateTime? endTime, string organizationId = null)
+        public async System.Threading.Tasks.Task<ReportingV3ChargebackDetailsGet200Response> GetChargebackDetailsAsync(DateTime? startTime, DateTime? endTime, string organizationId = null)
         {
             logger.Debug("CALLING API \"GetChargebackDetailsAsync\" STARTED");
             this.SetStatusCode(null);
@@ -360,7 +360,7 @@ namespace CyberSource.Api
         /// <param name="endTime">Valid report End Time in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format.[Rfc Date Format](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14)  **Example date format:**   - yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ (e.g. 2018-01-01T00:00:00.000Z) </param>
         /// <param name="organizationId">Valid Organization Id (optional)</param>
         /// <returns>Task of ApiResponse (ReportingV3ChargebackDetailsGet200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ReportingV3ChargebackDetailsGet200Response>> GetChargebackDetailsAsyncWithHttpInfo (DateTime? startTime, DateTime? endTime, string organizationId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ReportingV3ChargebackDetailsGet200Response>> GetChargebackDetailsAsyncWithHttpInfo(DateTime? startTime, DateTime? endTime, string organizationId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -417,19 +417,19 @@ namespace CyberSource.Api
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -446,7 +446,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<ReportingV3ChargebackDetailsGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (ReportingV3ChargebackDetailsGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportingV3ChargebackDetailsGet200Response))); // Return statement
+                (ReportingV3ChargebackDetailsGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportingV3ChargebackDetailsGet200Response))); // Return statement
         }
     }
 }

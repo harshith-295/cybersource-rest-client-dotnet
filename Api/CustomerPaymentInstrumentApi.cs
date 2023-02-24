@@ -37,7 +37,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns></returns>
-        void DeleteCustomerPaymentInstrument (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        void DeleteCustomerPaymentInstrument(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
 
         /// <summary>
         /// Delete a Customer Payment Instrument
@@ -50,7 +50,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteCustomerPaymentInstrumentWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        ApiResponse<Object> DeleteCustomerPaymentInstrumentWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
         /// <summary>
         /// Retrieve a Customer Payment Instrument
         /// </summary>
@@ -62,7 +62,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        Tmsv2customersEmbeddedDefaultPaymentInstrument GetCustomerPaymentInstrument (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        Tmsv2customersEmbeddedDefaultPaymentInstrument GetCustomerPaymentInstrument(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
 
         /// <summary>
         /// Retrieve a Customer Payment Instrument
@@ -75,7 +75,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
         /// <summary>
         /// List Payment Instruments for a Customer
         /// </summary>
@@ -88,7 +88,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>PaymentInstrumentList</returns>
-        PaymentInstrumentList GetCustomerPaymentInstrumentsList (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        PaymentInstrumentList GetCustomerPaymentInstrumentsList(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
 
         /// <summary>
         /// List Payment Instruments for a Customer
@@ -102,7 +102,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>ApiResponse of PaymentInstrumentList</returns>
-        ApiResponse<PaymentInstrumentList> GetCustomerPaymentInstrumentsListWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        ApiResponse<PaymentInstrumentList> GetCustomerPaymentInstrumentsListWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
         /// <summary>
         /// Update a Customer Payment Instrument
         /// </summary>
@@ -116,7 +116,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        Tmsv2customersEmbeddedDefaultPaymentInstrument PatchCustomersPaymentInstrument (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
+        Tmsv2customersEmbeddedDefaultPaymentInstrument PatchCustomersPaymentInstrument(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
 
         /// <summary>
         /// Update a Customer Payment Instrument
@@ -131,7 +131,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
+        ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
         /// <summary>
         /// Create a Customer Payment Instrument
         /// </summary>
@@ -143,7 +143,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        Tmsv2customersEmbeddedDefaultPaymentInstrument PostCustomerPaymentInstrument (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
+        Tmsv2customersEmbeddedDefaultPaymentInstrument PostCustomerPaymentInstrument(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
 
         /// <summary>
         /// Create a Customer Payment Instrument
@@ -156,7 +156,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentWithHttpInfo (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
+        ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentWithHttpInfo(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -170,7 +170,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteCustomerPaymentInstrumentAsync (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        System.Threading.Tasks.Task DeleteCustomerPaymentInstrumentAsync(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
 
         /// <summary>
         /// Delete a Customer Payment Instrument
@@ -183,7 +183,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
         /// <summary>
         /// Retrieve a Customer Payment Instrument
         /// </summary>
@@ -195,7 +195,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentAsync (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentAsync(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
 
         /// <summary>
         /// Retrieve a Customer Payment Instrument
@@ -208,7 +208,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultPaymentInstrument)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> GetCustomerPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
+        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> GetCustomerPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null);
         /// <summary>
         /// List Payment Instruments for a Customer
         /// </summary>
@@ -221,7 +221,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of PaymentInstrumentList</returns>
-        System.Threading.Tasks.Task<PaymentInstrumentList> GetCustomerPaymentInstrumentsListAsync (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        System.Threading.Tasks.Task<PaymentInstrumentList> GetCustomerPaymentInstrumentsListAsync(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
 
         /// <summary>
         /// List Payment Instruments for a Customer
@@ -235,7 +235,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of ApiResponse (PaymentInstrumentList)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentInstrumentList>> GetCustomerPaymentInstrumentsListAsyncWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
+        System.Threading.Tasks.Task<ApiResponse<PaymentInstrumentList>> GetCustomerPaymentInstrumentsListAsyncWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null);
         /// <summary>
         /// Update a Customer Payment Instrument
         /// </summary>
@@ -249,7 +249,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentAsync (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
+        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentAsync(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
 
         /// <summary>
         /// Update a Customer Payment Instrument
@@ -264,7 +264,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultPaymentInstrument)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PatchCustomersPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
+        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PatchCustomersPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null);
         /// <summary>
         /// Create a Customer Payment Instrument
         /// </summary>
@@ -276,7 +276,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentAsync (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
+        System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentAsync(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
 
         /// <summary>
         /// Create a Customer Payment Instrument
@@ -289,7 +289,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultPaymentInstrument)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PostCustomerPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
+        System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PostCustomerPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null);
         #endregion Asynchronous Operations
     }
 
@@ -353,7 +353,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -417,7 +417,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -438,7 +438,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns></returns>
-        public void DeleteCustomerPaymentInstrument (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public void DeleteCustomerPaymentInstrument(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"DeleteCustomerPaymentInstrument\" STARTED");
             this.SetStatusCode(null);
@@ -453,7 +453,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteCustomerPaymentInstrumentWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public ApiResponse<Object> DeleteCustomerPaymentInstrumentWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -508,22 +508,22 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.DELETE == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Delete == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Delete, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -549,7 +549,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteCustomerPaymentInstrumentAsync (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task DeleteCustomerPaymentInstrumentAsync(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"DeleteCustomerPaymentInstrumentAsync\" STARTED");
             this.SetStatusCode(null);
@@ -565,7 +565,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -620,19 +620,19 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.DELETE == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Delete == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Delete, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -660,7 +660,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public Tmsv2customersEmbeddedDefaultPaymentInstrument GetCustomerPaymentInstrument (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public Tmsv2customersEmbeddedDefaultPaymentInstrument GetCustomerPaymentInstrument(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"GetCustomerPaymentInstrument\" STARTED");
             this.SetStatusCode(null);
@@ -678,7 +678,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public ApiResponse< Tmsv2customersEmbeddedDefaultPaymentInstrument > GetCustomerPaymentInstrumentWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -733,22 +733,22 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -762,7 +762,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultPaymentInstrument) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
+                (Tmsv2customersEmbeddedDefaultPaymentInstrument)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
         }
 
         /// <summary>
@@ -773,7 +773,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentAsync (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> GetCustomerPaymentInstrumentAsync(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             logger.Debug("CALLING API \"GetCustomerPaymentInstrumentAsync\" STARTED");
             this.SetStatusCode(null);
@@ -792,7 +792,7 @@ namespace CyberSource.Api
         /// <param name="paymentInstrumentTokenId">The TokenId of a payment instrument.</param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultPaymentInstrument)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> GetCustomerPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> GetCustomerPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -847,19 +847,19 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -876,7 +876,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultPaymentInstrument) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
+                (Tmsv2customersEmbeddedDefaultPaymentInstrument)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
         }
         /// <summary>
         /// List Payment Instruments for a Customer 
@@ -887,7 +887,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>PaymentInstrumentList</returns>
-        public PaymentInstrumentList GetCustomerPaymentInstrumentsList (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public PaymentInstrumentList GetCustomerPaymentInstrumentsList(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             logger.Debug("CALLING API \"GetCustomerPaymentInstrumentsList\" STARTED");
             this.SetStatusCode(null);
@@ -906,7 +906,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>ApiResponse of PaymentInstrumentList</returns>
-        public ApiResponse< PaymentInstrumentList > GetCustomerPaymentInstrumentsListWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public ApiResponse<PaymentInstrumentList> GetCustomerPaymentInstrumentsListWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -960,22 +960,22 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -989,7 +989,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<PaymentInstrumentList>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PaymentInstrumentList) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentInstrumentList))); // Return statement
+                (PaymentInstrumentList)Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentInstrumentList))); // Return statement
         }
 
         /// <summary>
@@ -1001,7 +1001,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of PaymentInstrumentList</returns>
-        public async System.Threading.Tasks.Task<PaymentInstrumentList> GetCustomerPaymentInstrumentsListAsync (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public async System.Threading.Tasks.Task<PaymentInstrumentList> GetCustomerPaymentInstrumentsListAsync(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             logger.Debug("CALLING API \"GetCustomerPaymentInstrumentsListAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1021,7 +1021,7 @@ namespace CyberSource.Api
         /// <param name="offset">Starting record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional, default to 0)</param>
         /// <param name="limit">The maximum number that can be returned in the array starting from the offset record in zero-based dataset. Default is 20, maximum is 100. (optional, default to 20)</param>
         /// <returns>Task of ApiResponse (PaymentInstrumentList)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PaymentInstrumentList>> GetCustomerPaymentInstrumentsListAsyncWithHttpInfo (string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PaymentInstrumentList>> GetCustomerPaymentInstrumentsListAsyncWithHttpInfo(string customerTokenId, string profileId = null, long? offset = null, long? limit = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1075,19 +1075,19 @@ namespace CyberSource.Api
             {
                 localVarHeaderParams.Add("profile-id", Configuration.ApiClient.ParameterToString(profileId)); // header parameter
             }
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1104,7 +1104,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<PaymentInstrumentList>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PaymentInstrumentList) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentInstrumentList))); // Return statement
+                (PaymentInstrumentList)Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentInstrumentList))); // Return statement
         }
         /// <summary>
         /// Update a Customer Payment Instrument 
@@ -1116,7 +1116,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public Tmsv2customersEmbeddedDefaultPaymentInstrument PatchCustomersPaymentInstrument (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
+        public Tmsv2customersEmbeddedDefaultPaymentInstrument PatchCustomersPaymentInstrument(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
         {
             logger.Debug("CALLING API \"PatchCustomersPaymentInstrument\" STARTED");
             this.SetStatusCode(null);
@@ -1136,7 +1136,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public ApiResponse< Tmsv2customersEmbeddedDefaultPaymentInstrument > PatchCustomersPaymentInstrumentWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
+        public ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1221,11 +1221,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Patch, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1239,7 +1239,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultPaymentInstrument) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
+                (Tmsv2customersEmbeddedDefaultPaymentInstrument)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
         }
 
         /// <summary>
@@ -1252,7 +1252,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentAsync (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
+        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PatchCustomersPaymentInstrumentAsync(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
         {
             logger.Debug("CALLING API \"PatchCustomersPaymentInstrumentAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1273,7 +1273,7 @@ namespace CyberSource.Api
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <param name="ifMatch">Contains an ETag value from a GET request to make the request conditional. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultPaymentInstrument)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PatchCustomersPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PatchCustomersPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, string paymentInstrumentTokenId, PatchCustomerPaymentInstrumentRequest patchCustomerPaymentInstrumentRequest, string profileId = null, string ifMatch = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1358,8 +1358,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Patch, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1376,7 +1376,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultPaymentInstrument) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
+                (Tmsv2customersEmbeddedDefaultPaymentInstrument)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
         }
         /// <summary>
         /// Create a Customer Payment Instrument Include an existing TMS Customer &amp; Instrument Identifier token id in the request. * A Customer token can be created by calling: **POST *_/tms/v2/customers*** * An Instrument Identifier token can be created by calling: **POST *_/tms/v1/instrumentidentifiers*** 
@@ -1386,7 +1386,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public Tmsv2customersEmbeddedDefaultPaymentInstrument PostCustomerPaymentInstrument (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
+        public Tmsv2customersEmbeddedDefaultPaymentInstrument PostCustomerPaymentInstrument(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
         {
             logger.Debug("CALLING API \"PostCustomerPaymentInstrument\" STARTED");
             this.SetStatusCode(null);
@@ -1404,7 +1404,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>ApiResponse of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public ApiResponse< Tmsv2customersEmbeddedDefaultPaymentInstrument > PostCustomerPaymentInstrumentWithHttpInfo (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
+        public ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentWithHttpInfo(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1474,11 +1474,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1492,7 +1492,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultPaymentInstrument) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
+                (Tmsv2customersEmbeddedDefaultPaymentInstrument)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
         }
 
         /// <summary>
@@ -1503,7 +1503,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of Tmsv2customersEmbeddedDefaultPaymentInstrument</returns>
-        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentAsync (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
+        public async System.Threading.Tasks.Task<Tmsv2customersEmbeddedDefaultPaymentInstrument> PostCustomerPaymentInstrumentAsync(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
         {
             logger.Debug("CALLING API \"PostCustomerPaymentInstrumentAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1522,7 +1522,7 @@ namespace CyberSource.Api
         /// <param name="postCustomerPaymentInstrumentRequest"></param>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration. (optional)</param>
         /// <returns>Task of ApiResponse (Tmsv2customersEmbeddedDefaultPaymentInstrument)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PostCustomerPaymentInstrumentAsyncWithHttpInfo (string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>> PostCustomerPaymentInstrumentAsyncWithHttpInfo(string customerTokenId, PostCustomerPaymentInstrumentRequest postCustomerPaymentInstrumentRequest, string profileId = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1592,8 +1592,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1610,7 +1610,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Tmsv2customersEmbeddedDefaultPaymentInstrument>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Tmsv2customersEmbeddedDefaultPaymentInstrument) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
+                (Tmsv2customersEmbeddedDefaultPaymentInstrument)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Tmsv2customersEmbeddedDefaultPaymentInstrument))); // Return statement
         }
     }
 }

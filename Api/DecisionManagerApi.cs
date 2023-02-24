@@ -36,7 +36,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>RiskV1UpdatePost201Response</returns>
-        RiskV1UpdatePost201Response AddNegative (string type, AddNegativeListRequest addNegativeListRequest);
+        RiskV1UpdatePost201Response AddNegative(string type, AddNegativeListRequest addNegativeListRequest);
 
         /// <summary>
         /// List Management
@@ -48,7 +48,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>ApiResponse of RiskV1UpdatePost201Response</returns>
-        ApiResponse<RiskV1UpdatePost201Response> AddNegativeWithHttpInfo (string type, AddNegativeListRequest addNegativeListRequest);
+        ApiResponse<RiskV1UpdatePost201Response> AddNegativeWithHttpInfo(string type, AddNegativeListRequest addNegativeListRequest);
         /// <summary>
         /// Create Decision Manager
         /// </summary>
@@ -58,7 +58,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createBundledDecisionManagerCaseRequest"></param>
         /// <returns>RiskV1DecisionsPost201Response</returns>
-        RiskV1DecisionsPost201Response CreateBundledDecisionManagerCase (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
+        RiskV1DecisionsPost201Response CreateBundledDecisionManagerCase(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
 
         /// <summary>
         /// Create Decision Manager
@@ -69,7 +69,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createBundledDecisionManagerCaseRequest"></param>
         /// <returns>ApiResponse of RiskV1DecisionsPost201Response</returns>
-        ApiResponse<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseWithHttpInfo (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
+        ApiResponse<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseWithHttpInfo(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
         /// <summary>
         /// Fraud Marking
         /// </summary>
@@ -80,7 +80,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>RiskV1UpdatePost201Response</returns>
-        RiskV1UpdatePost201Response FraudUpdate (string id, FraudMarkingActionRequest fraudMarkingActionRequest);
+        RiskV1UpdatePost201Response FraudUpdate(string id, FraudMarkingActionRequest fraudMarkingActionRequest);
 
         /// <summary>
         /// Fraud Marking
@@ -92,7 +92,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>ApiResponse of RiskV1UpdatePost201Response</returns>
-        ApiResponse<RiskV1UpdatePost201Response> FraudUpdateWithHttpInfo (string id, FraudMarkingActionRequest fraudMarkingActionRequest);
+        ApiResponse<RiskV1UpdatePost201Response> FraudUpdateWithHttpInfo(string id, FraudMarkingActionRequest fraudMarkingActionRequest);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -105,7 +105,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>Task of RiskV1UpdatePost201Response</returns>
-        System.Threading.Tasks.Task<RiskV1UpdatePost201Response> AddNegativeAsync (string type, AddNegativeListRequest addNegativeListRequest);
+        System.Threading.Tasks.Task<RiskV1UpdatePost201Response> AddNegativeAsync(string type, AddNegativeListRequest addNegativeListRequest);
 
         /// <summary>
         /// List Management
@@ -117,7 +117,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>Task of ApiResponse (RiskV1UpdatePost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> AddNegativeAsyncWithHttpInfo (string type, AddNegativeListRequest addNegativeListRequest);
+        System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> AddNegativeAsyncWithHttpInfo(string type, AddNegativeListRequest addNegativeListRequest);
         /// <summary>
         /// Create Decision Manager
         /// </summary>
@@ -127,7 +127,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createBundledDecisionManagerCaseRequest"></param>
         /// <returns>Task of RiskV1DecisionsPost201Response</returns>
-        System.Threading.Tasks.Task<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseAsync (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
+        System.Threading.Tasks.Task<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseAsync(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
 
         /// <summary>
         /// Create Decision Manager
@@ -138,7 +138,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createBundledDecisionManagerCaseRequest"></param>
         /// <returns>Task of ApiResponse (RiskV1DecisionsPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RiskV1DecisionsPost201Response>> CreateBundledDecisionManagerCaseAsyncWithHttpInfo (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
+        System.Threading.Tasks.Task<ApiResponse<RiskV1DecisionsPost201Response>> CreateBundledDecisionManagerCaseAsyncWithHttpInfo(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest);
         /// <summary>
         /// Fraud Marking
         /// </summary>
@@ -149,7 +149,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>Task of RiskV1UpdatePost201Response</returns>
-        System.Threading.Tasks.Task<RiskV1UpdatePost201Response> FraudUpdateAsync (string id, FraudMarkingActionRequest fraudMarkingActionRequest);
+        System.Threading.Tasks.Task<RiskV1UpdatePost201Response> FraudUpdateAsync(string id, FraudMarkingActionRequest fraudMarkingActionRequest);
 
         /// <summary>
         /// Fraud Marking
@@ -161,7 +161,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>Task of ApiResponse (RiskV1UpdatePost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> FraudUpdateAsyncWithHttpInfo (string id, FraudMarkingActionRequest fraudMarkingActionRequest);
+        System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> FraudUpdateAsyncWithHttpInfo(string id, FraudMarkingActionRequest fraudMarkingActionRequest);
         #endregion Asynchronous Operations
     }
 
@@ -225,7 +225,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -289,7 +289,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -309,7 +309,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>RiskV1UpdatePost201Response</returns>
-        public RiskV1UpdatePost201Response AddNegative (string type, AddNegativeListRequest addNegativeListRequest)
+        public RiskV1UpdatePost201Response AddNegative(string type, AddNegativeListRequest addNegativeListRequest)
         {
             logger.Debug("CALLING API \"AddNegative\" STARTED");
             this.SetStatusCode(null);
@@ -326,7 +326,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>ApiResponse of RiskV1UpdatePost201Response</returns>
-        public ApiResponse< RiskV1UpdatePost201Response > AddNegativeWithHttpInfo (string type, AddNegativeListRequest addNegativeListRequest)
+        public ApiResponse<RiskV1UpdatePost201Response> AddNegativeWithHttpInfo(string type, AddNegativeListRequest addNegativeListRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -392,11 +392,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -410,7 +410,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<RiskV1UpdatePost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (RiskV1UpdatePost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
+                (RiskV1UpdatePost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
         }
 
         /// <summary>
@@ -420,7 +420,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>Task of RiskV1UpdatePost201Response</returns>
-        public async System.Threading.Tasks.Task<RiskV1UpdatePost201Response> AddNegativeAsync (string type, AddNegativeListRequest addNegativeListRequest)
+        public async System.Threading.Tasks.Task<RiskV1UpdatePost201Response> AddNegativeAsync(string type, AddNegativeListRequest addNegativeListRequest)
         {
             logger.Debug("CALLING API \"AddNegativeAsync\" STARTED");
             this.SetStatusCode(null);
@@ -438,7 +438,7 @@ namespace CyberSource.Api
         /// <param name="type">The list to be updated. It can be &#39;positive&#39;, &#39;negative&#39; or &#39;review&#39;.</param>
         /// <param name="addNegativeListRequest"></param>
         /// <returns>Task of ApiResponse (RiskV1UpdatePost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> AddNegativeAsyncWithHttpInfo (string type, AddNegativeListRequest addNegativeListRequest)
+        public async System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> AddNegativeAsyncWithHttpInfo(string type, AddNegativeListRequest addNegativeListRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -504,8 +504,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -522,7 +522,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<RiskV1UpdatePost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (RiskV1UpdatePost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
+                (RiskV1UpdatePost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
         }
         /// <summary>
         /// Create Decision Manager Decision Manager can help you automate and streamline your fraud operations. Decision Manager will return a decision based on the request values.
@@ -530,7 +530,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createBundledDecisionManagerCaseRequest"></param>
         /// <returns>RiskV1DecisionsPost201Response</returns>
-        public RiskV1DecisionsPost201Response CreateBundledDecisionManagerCase (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
+        public RiskV1DecisionsPost201Response CreateBundledDecisionManagerCase(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
         {
             logger.Debug("CALLING API \"CreateBundledDecisionManagerCase\" STARTED");
             this.SetStatusCode(null);
@@ -546,7 +546,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createBundledDecisionManagerCaseRequest"></param>
         /// <returns>ApiResponse of RiskV1DecisionsPost201Response</returns>
-        public ApiResponse< RiskV1DecisionsPost201Response > CreateBundledDecisionManagerCaseWithHttpInfo (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
+        public ApiResponse<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseWithHttpInfo(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -601,107 +601,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateBundledDecisionManagerCase", localVarResponse);
-                if (exception != null)
-                {
-                    logger.Error($"Exception : {exception.Message}");
-                    throw exception;
-                }
-            }
-
-            return new ApiResponse<RiskV1DecisionsPost201Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (RiskV1DecisionsPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1DecisionsPost201Response))); // Return statement
-        }
-
-        /// <summary>
-        /// Create Decision Manager Decision Manager can help you automate and streamline your fraud operations. Decision Manager will return a decision based on the request values.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createBundledDecisionManagerCaseRequest"></param>
-        /// <returns>Task of RiskV1DecisionsPost201Response</returns>
-        public async System.Threading.Tasks.Task<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseAsync (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
-        {
-            logger.Debug("CALLING API \"CreateBundledDecisionManagerCaseAsync\" STARTED");
-            this.SetStatusCode(null);
-            ApiResponse<RiskV1DecisionsPost201Response> localVarResponse = await CreateBundledDecisionManagerCaseAsyncWithHttpInfo(createBundledDecisionManagerCaseRequest);
-            logger.Debug("CALLING API \"CreateBundledDecisionManagerCaseAsync\" ENDED");
-            this.SetStatusCode(localVarResponse.StatusCode);
-            return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Create Decision Manager Decision Manager can help you automate and streamline your fraud operations. Decision Manager will return a decision based on the request values.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createBundledDecisionManagerCaseRequest"></param>
-        /// <returns>Task of ApiResponse (RiskV1DecisionsPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RiskV1DecisionsPost201Response>> CreateBundledDecisionManagerCaseAsyncWithHttpInfo (CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
-        {
-            LogUtility logUtility = new LogUtility();
-
-            // verify the required parameter 'createBundledDecisionManagerCaseRequest' is set
-            if (createBundledDecisionManagerCaseRequest == null)
-            {
-                logger.Error("ApiException : Missing required parameter 'createBundledDecisionManagerCaseRequest' when calling DecisionManagerApi->CreateBundledDecisionManagerCase");
-                throw new ApiException(400, "Missing required parameter 'createBundledDecisionManagerCaseRequest' when calling DecisionManagerApi->CreateBundledDecisionManagerCase");
-            }
-
-            var localVarPath = $"/risk/v1/decisions";
-            var localVarPathParams = new Dictionary<string, string>();
-            var localVarQueryParams = new Dictionary<string, string>();
-            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<string, string>();
-            var localVarFileParams = new Dictionary<string, FileParameter>();
-            object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            string[] localVarHttpContentTypes = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            string[] localVarHttpHeaderAccepts = new string[] {
-                "application/hal+json;charset=utf-8"
-            };
-            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-            {
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-            }
-
-            if (createBundledDecisionManagerCaseRequest != null && createBundledDecisionManagerCaseRequest.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(createBundledDecisionManagerCaseRequest); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createBundledDecisionManagerCaseRequest; // byte array
-            }
-
-            if (logUtility.IsMaskingEnabled(logger))
-            {
-                logger.Debug($"HTTP Request Body :\n{logUtility.MaskSensitiveData(localVarPostBody.ToString())}");
-            }
-            else
-            {
-                logger.Debug($"HTTP Request Body :\n{localVarPostBody}");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -718,7 +619,106 @@ namespace CyberSource.Api
 
             return new ApiResponse<RiskV1DecisionsPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (RiskV1DecisionsPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1DecisionsPost201Response))); // Return statement
+                (RiskV1DecisionsPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1DecisionsPost201Response))); // Return statement
+        }
+
+        /// <summary>
+        /// Create Decision Manager Decision Manager can help you automate and streamline your fraud operations. Decision Manager will return a decision based on the request values.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createBundledDecisionManagerCaseRequest"></param>
+        /// <returns>Task of RiskV1DecisionsPost201Response</returns>
+        public async System.Threading.Tasks.Task<RiskV1DecisionsPost201Response> CreateBundledDecisionManagerCaseAsync(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
+        {
+            logger.Debug("CALLING API \"CreateBundledDecisionManagerCaseAsync\" STARTED");
+            this.SetStatusCode(null);
+            ApiResponse<RiskV1DecisionsPost201Response> localVarResponse = await CreateBundledDecisionManagerCaseAsyncWithHttpInfo(createBundledDecisionManagerCaseRequest);
+            logger.Debug("CALLING API \"CreateBundledDecisionManagerCaseAsync\" ENDED");
+            this.SetStatusCode(localVarResponse.StatusCode);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create Decision Manager Decision Manager can help you automate and streamline your fraud operations. Decision Manager will return a decision based on the request values.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createBundledDecisionManagerCaseRequest"></param>
+        /// <returns>Task of ApiResponse (RiskV1DecisionsPost201Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RiskV1DecisionsPost201Response>> CreateBundledDecisionManagerCaseAsyncWithHttpInfo(CreateBundledDecisionManagerCaseRequest createBundledDecisionManagerCaseRequest)
+        {
+            LogUtility logUtility = new LogUtility();
+
+            // verify the required parameter 'createBundledDecisionManagerCaseRequest' is set
+            if (createBundledDecisionManagerCaseRequest == null)
+            {
+                logger.Error("ApiException : Missing required parameter 'createBundledDecisionManagerCaseRequest' when calling DecisionManagerApi->CreateBundledDecisionManagerCase");
+                throw new ApiException(400, "Missing required parameter 'createBundledDecisionManagerCaseRequest' when calling DecisionManagerApi->CreateBundledDecisionManagerCase");
+            }
+
+            var localVarPath = $"/risk/v1/decisions";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new Dictionary<string, string>();
+            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+            object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            string[] localVarHttpContentTypes = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            string[] localVarHttpHeaderAccepts = new string[] {
+                "application/hal+json;charset=utf-8"
+            };
+            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+            {
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+            }
+
+            if (createBundledDecisionManagerCaseRequest != null && createBundledDecisionManagerCaseRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(createBundledDecisionManagerCaseRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createBundledDecisionManagerCaseRequest; // byte array
+            }
+
+            if (logUtility.IsMaskingEnabled(logger))
+            {
+                logger.Debug($"HTTP Request Body :\n{logUtility.MaskSensitiveData(localVarPostBody.ToString())}");
+            }
+            else
+            {
+                logger.Debug($"HTTP Request Body :\n{localVarPostBody}");
+            }
+
+
+            // make the HTTP request
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateBundledDecisionManagerCase", localVarResponse);
+                if (exception != null)
+                {
+                    logger.Error($"Exception : {exception.Message}");
+                    throw exception;
+                }
+            }
+
+            return new ApiResponse<RiskV1DecisionsPost201Response>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (RiskV1DecisionsPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1DecisionsPost201Response))); // Return statement
         }
         /// <summary>
         /// Fraud Marking This can be used to - 1. Add known fraudulent data to the fraud history 2. Remove data added to history with Transaction Marking Tool or by uploading chargeback files 3. Remove chargeback data from history that was automatically added. For detailed information, contact your Cybersource representative  Place the request ID of the transaction you want to mark as suspect (or remove from history) as the path parameter in this request. 
@@ -727,7 +727,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>RiskV1UpdatePost201Response</returns>
-        public RiskV1UpdatePost201Response FraudUpdate (string id, FraudMarkingActionRequest fraudMarkingActionRequest)
+        public RiskV1UpdatePost201Response FraudUpdate(string id, FraudMarkingActionRequest fraudMarkingActionRequest)
         {
             logger.Debug("CALLING API \"FraudUpdate\" STARTED");
             this.SetStatusCode(null);
@@ -744,7 +744,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>ApiResponse of RiskV1UpdatePost201Response</returns>
-        public ApiResponse< RiskV1UpdatePost201Response > FraudUpdateWithHttpInfo (string id, FraudMarkingActionRequest fraudMarkingActionRequest)
+        public ApiResponse<RiskV1UpdatePost201Response> FraudUpdateWithHttpInfo(string id, FraudMarkingActionRequest fraudMarkingActionRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -810,11 +810,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -828,7 +828,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<RiskV1UpdatePost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (RiskV1UpdatePost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
+                (RiskV1UpdatePost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
         }
 
         /// <summary>
@@ -838,7 +838,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>Task of RiskV1UpdatePost201Response</returns>
-        public async System.Threading.Tasks.Task<RiskV1UpdatePost201Response> FraudUpdateAsync (string id, FraudMarkingActionRequest fraudMarkingActionRequest)
+        public async System.Threading.Tasks.Task<RiskV1UpdatePost201Response> FraudUpdateAsync(string id, FraudMarkingActionRequest fraudMarkingActionRequest)
         {
             logger.Debug("CALLING API \"FraudUpdateAsync\" STARTED");
             this.SetStatusCode(null);
@@ -856,7 +856,7 @@ namespace CyberSource.Api
         /// <param name="id">Request ID of the transaction that you want to mark as suspect or remove from history.</param>
         /// <param name="fraudMarkingActionRequest"></param>
         /// <returns>Task of ApiResponse (RiskV1UpdatePost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> FraudUpdateAsyncWithHttpInfo (string id, FraudMarkingActionRequest fraudMarkingActionRequest)
+        public async System.Threading.Tasks.Task<ApiResponse<RiskV1UpdatePost201Response>> FraudUpdateAsyncWithHttpInfo(string id, FraudMarkingActionRequest fraudMarkingActionRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -922,8 +922,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -940,7 +940,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<RiskV1UpdatePost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (RiskV1UpdatePost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
+                (RiskV1UpdatePost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(RiskV1UpdatePost201Response))); // Return statement
         }
     }
 }

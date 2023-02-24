@@ -35,7 +35,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>KmsV2KeysAsymPost201Response</returns>
-        KmsV2KeysAsymPost201Response CreateP12Keys (CreateP12KeysRequest createP12KeysRequest);
+        KmsV2KeysAsymPost201Response CreateP12Keys(CreateP12KeysRequest createP12KeysRequest);
 
         /// <summary>
         /// Create one or more PKCS12 keys
@@ -46,7 +46,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>ApiResponse of KmsV2KeysAsymPost201Response</returns>
-        ApiResponse<KmsV2KeysAsymPost201Response> CreateP12KeysWithHttpInfo (CreateP12KeysRequest createP12KeysRequest);
+        ApiResponse<KmsV2KeysAsymPost201Response> CreateP12KeysWithHttpInfo(CreateP12KeysRequest createP12KeysRequest);
         /// <summary>
         /// Delete one or more PKCS12 keys
         /// </summary>
@@ -56,7 +56,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>KmsV2KeysAsymDeletesPost200Response</returns>
-        KmsV2KeysAsymDeletesPost200Response DeleteBulkP12Keys (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
+        KmsV2KeysAsymDeletesPost200Response DeleteBulkP12Keys(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
 
         /// <summary>
         /// Delete one or more PKCS12 keys
@@ -67,7 +67,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>ApiResponse of KmsV2KeysAsymDeletesPost200Response</returns>
-        ApiResponse<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysWithHttpInfo (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
+        ApiResponse<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysWithHttpInfo(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
         /// <summary>
         /// Retrieves PKCS12 key details
         /// </summary>
@@ -77,7 +77,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="keyId">Key ID. </param>
         /// <returns>KmsV2KeysAsymGet200Response</returns>
-        KmsV2KeysAsymGet200Response GetP12KeyDetails (string keyId);
+        KmsV2KeysAsymGet200Response GetP12KeyDetails(string keyId);
 
         /// <summary>
         /// Retrieves PKCS12 key details
@@ -88,7 +88,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="keyId">Key ID. </param>
         /// <returns>ApiResponse of KmsV2KeysAsymGet200Response</returns>
-        ApiResponse<KmsV2KeysAsymGet200Response> GetP12KeyDetailsWithHttpInfo (string keyId);
+        ApiResponse<KmsV2KeysAsymGet200Response> GetP12KeyDetailsWithHttpInfo(string keyId);
         /// <summary>
         /// Activate or De-activate Asymmetric Key
         /// </summary>
@@ -99,7 +99,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>Object</returns>
-        Object UpdateAsymKey (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
+        Object UpdateAsymKey(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
 
         /// <summary>
         /// Activate or De-activate Asymmetric Key
@@ -111,7 +111,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> UpdateAsymKeyWithHttpInfo (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
+        ApiResponse<Object> UpdateAsymKeyWithHttpInfo(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -123,7 +123,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>Task of KmsV2KeysAsymPost201Response</returns>
-        System.Threading.Tasks.Task<KmsV2KeysAsymPost201Response> CreateP12KeysAsync (CreateP12KeysRequest createP12KeysRequest);
+        System.Threading.Tasks.Task<KmsV2KeysAsymPost201Response> CreateP12KeysAsync(CreateP12KeysRequest createP12KeysRequest);
 
         /// <summary>
         /// Create one or more PKCS12 keys
@@ -134,7 +134,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>Task of ApiResponse (KmsV2KeysAsymPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymPost201Response>> CreateP12KeysAsyncWithHttpInfo (CreateP12KeysRequest createP12KeysRequest);
+        System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymPost201Response>> CreateP12KeysAsyncWithHttpInfo(CreateP12KeysRequest createP12KeysRequest);
         /// <summary>
         /// Delete one or more PKCS12 keys
         /// </summary>
@@ -144,7 +144,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>Task of KmsV2KeysAsymDeletesPost200Response</returns>
-        System.Threading.Tasks.Task<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysAsync (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
+        System.Threading.Tasks.Task<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysAsync(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
 
         /// <summary>
         /// Delete one or more PKCS12 keys
@@ -155,7 +155,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>Task of ApiResponse (KmsV2KeysAsymDeletesPost200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymDeletesPost200Response>> DeleteBulkP12KeysAsyncWithHttpInfo (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
+        System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymDeletesPost200Response>> DeleteBulkP12KeysAsyncWithHttpInfo(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest);
         /// <summary>
         /// Retrieves PKCS12 key details
         /// </summary>
@@ -165,7 +165,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="keyId">Key ID. </param>
         /// <returns>Task of KmsV2KeysAsymGet200Response</returns>
-        System.Threading.Tasks.Task<KmsV2KeysAsymGet200Response> GetP12KeyDetailsAsync (string keyId);
+        System.Threading.Tasks.Task<KmsV2KeysAsymGet200Response> GetP12KeyDetailsAsync(string keyId);
 
         /// <summary>
         /// Retrieves PKCS12 key details
@@ -176,7 +176,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="keyId">Key ID. </param>
         /// <returns>Task of ApiResponse (KmsV2KeysAsymGet200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymGet200Response>> GetP12KeyDetailsAsyncWithHttpInfo (string keyId);
+        System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymGet200Response>> GetP12KeyDetailsAsyncWithHttpInfo(string keyId);
         /// <summary>
         /// Activate or De-activate Asymmetric Key
         /// </summary>
@@ -187,7 +187,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> UpdateAsymKeyAsync (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
+        System.Threading.Tasks.Task<Object> UpdateAsymKeyAsync(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
 
         /// <summary>
         /// Activate or De-activate Asymmetric Key
@@ -199,7 +199,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateAsymKeyAsyncWithHttpInfo (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
+        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateAsymKeyAsyncWithHttpInfo(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest);
         #endregion Asynchronous Operations
     }
 
@@ -263,7 +263,8 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            //return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -327,7 +328,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -346,7 +347,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>KmsV2KeysAsymPost201Response</returns>
-        public KmsV2KeysAsymPost201Response CreateP12Keys (CreateP12KeysRequest createP12KeysRequest)
+        public KmsV2KeysAsymPost201Response CreateP12Keys(CreateP12KeysRequest createP12KeysRequest)
         {
             logger.Debug("CALLING API \"CreateP12Keys\" STARTED");
             this.SetStatusCode(null);
@@ -362,7 +363,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>ApiResponse of KmsV2KeysAsymPost201Response</returns>
-        public ApiResponse< KmsV2KeysAsymPost201Response > CreateP12KeysWithHttpInfo (CreateP12KeysRequest createP12KeysRequest)
+        public ApiResponse<KmsV2KeysAsymPost201Response> CreateP12KeysWithHttpInfo(CreateP12KeysRequest createP12KeysRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -417,11 +418,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -435,7 +436,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<KmsV2KeysAsymPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (KmsV2KeysAsymPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymPost201Response))); // Return statement
+                (KmsV2KeysAsymPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymPost201Response))); // Return statement
         }
 
         /// <summary>
@@ -444,7 +445,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>Task of KmsV2KeysAsymPost201Response</returns>
-        public async System.Threading.Tasks.Task<KmsV2KeysAsymPost201Response> CreateP12KeysAsync (CreateP12KeysRequest createP12KeysRequest)
+        public async System.Threading.Tasks.Task<KmsV2KeysAsymPost201Response> CreateP12KeysAsync(CreateP12KeysRequest createP12KeysRequest)
         {
             logger.Debug("CALLING API \"CreateP12KeysAsync\" STARTED");
             this.SetStatusCode(null);
@@ -461,7 +462,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createP12KeysRequest"></param>
         /// <returns>Task of ApiResponse (KmsV2KeysAsymPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymPost201Response>> CreateP12KeysAsyncWithHttpInfo (CreateP12KeysRequest createP12KeysRequest)
+        public async System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymPost201Response>> CreateP12KeysAsyncWithHttpInfo(CreateP12KeysRequest createP12KeysRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -516,8 +517,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -534,7 +535,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<KmsV2KeysAsymPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (KmsV2KeysAsymPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymPost201Response))); // Return statement
+                (KmsV2KeysAsymPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymPost201Response))); // Return statement
         }
         /// <summary>
         /// Delete one or more PKCS12 keys &#39;Delete one or more PKCS12 keys&#39; 
@@ -542,7 +543,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>KmsV2KeysAsymDeletesPost200Response</returns>
-        public KmsV2KeysAsymDeletesPost200Response DeleteBulkP12Keys (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
+        public KmsV2KeysAsymDeletesPost200Response DeleteBulkP12Keys(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
         {
             logger.Debug("CALLING API \"DeleteBulkP12Keys\" STARTED");
             this.SetStatusCode(null);
@@ -558,7 +559,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>ApiResponse of KmsV2KeysAsymDeletesPost200Response</returns>
-        public ApiResponse< KmsV2KeysAsymDeletesPost200Response > DeleteBulkP12KeysWithHttpInfo (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
+        public ApiResponse<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysWithHttpInfo(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -613,11 +614,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -631,7 +632,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<KmsV2KeysAsymDeletesPost200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (KmsV2KeysAsymDeletesPost200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymDeletesPost200Response))); // Return statement
+                (KmsV2KeysAsymDeletesPost200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymDeletesPost200Response))); // Return statement
         }
 
         /// <summary>
@@ -640,7 +641,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>Task of KmsV2KeysAsymDeletesPost200Response</returns>
-        public async System.Threading.Tasks.Task<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysAsync (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
+        public async System.Threading.Tasks.Task<KmsV2KeysAsymDeletesPost200Response> DeleteBulkP12KeysAsync(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
         {
             logger.Debug("CALLING API \"DeleteBulkP12KeysAsync\" STARTED");
             this.SetStatusCode(null);
@@ -657,7 +658,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="deleteBulkP12KeysRequest"></param>
         /// <returns>Task of ApiResponse (KmsV2KeysAsymDeletesPost200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymDeletesPost200Response>> DeleteBulkP12KeysAsyncWithHttpInfo (DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
+        public async System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymDeletesPost200Response>> DeleteBulkP12KeysAsyncWithHttpInfo(DeleteBulkP12KeysRequest deleteBulkP12KeysRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -712,8 +713,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -730,7 +731,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<KmsV2KeysAsymDeletesPost200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (KmsV2KeysAsymDeletesPost200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymDeletesPost200Response))); // Return statement
+                (KmsV2KeysAsymDeletesPost200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymDeletesPost200Response))); // Return statement
         }
         /// <summary>
         /// Retrieves PKCS12 key details Retrieves keys details by providing the key id.
@@ -738,7 +739,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="keyId">Key ID. </param>
         /// <returns>KmsV2KeysAsymGet200Response</returns>
-        public KmsV2KeysAsymGet200Response GetP12KeyDetails (string keyId)
+        public KmsV2KeysAsymGet200Response GetP12KeyDetails(string keyId)
         {
             logger.Debug("CALLING API \"GetP12KeyDetails\" STARTED");
             this.SetStatusCode(null);
@@ -754,7 +755,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="keyId">Key ID. </param>
         /// <returns>ApiResponse of KmsV2KeysAsymGet200Response</returns>
-        public ApiResponse< KmsV2KeysAsymGet200Response > GetP12KeyDetailsWithHttpInfo (string keyId)
+        public ApiResponse<KmsV2KeysAsymGet200Response> GetP12KeyDetailsWithHttpInfo(string keyId)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -794,114 +795,19 @@ namespace CyberSource.Api
                 localVarPathParams.Add("keyId", Configuration.ApiClient.ParameterToString(keyId)); // path parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetP12KeyDetails", localVarResponse);
-                if (exception != null)
-                {
-                    logger.Error($"Exception : {exception.Message}");
-                    throw exception;
-                }
-            }
-
-            return new ApiResponse<KmsV2KeysAsymGet200Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (KmsV2KeysAsymGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymGet200Response))); // Return statement
-        }
-
-        /// <summary>
-        /// Retrieves PKCS12 key details Retrieves keys details by providing the key id.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="keyId">Key ID. </param>
-        /// <returns>Task of KmsV2KeysAsymGet200Response</returns>
-        public async System.Threading.Tasks.Task<KmsV2KeysAsymGet200Response> GetP12KeyDetailsAsync (string keyId)
-        {
-            logger.Debug("CALLING API \"GetP12KeyDetailsAsync\" STARTED");
-            this.SetStatusCode(null);
-            ApiResponse<KmsV2KeysAsymGet200Response> localVarResponse = await GetP12KeyDetailsAsyncWithHttpInfo(keyId);
-            logger.Debug("CALLING API \"GetP12KeyDetailsAsync\" ENDED");
-            this.SetStatusCode(localVarResponse.StatusCode);
-            return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Retrieves PKCS12 key details Retrieves keys details by providing the key id.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="keyId">Key ID. </param>
-        /// <returns>Task of ApiResponse (KmsV2KeysAsymGet200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymGet200Response>> GetP12KeyDetailsAsyncWithHttpInfo (string keyId)
-        {
-            LogUtility logUtility = new LogUtility();
-
-            // verify the required parameter 'keyId' is set
-            if (keyId == null)
-            {
-                logger.Error("ApiException : Missing required parameter 'keyId' when calling AsymmetricKeyManagementApi->GetP12KeyDetails");
-                throw new ApiException(400, "Missing required parameter 'keyId' when calling AsymmetricKeyManagementApi->GetP12KeyDetails");
-            }
-
-            var localVarPath = $"/kms/v2/keys-asym/{keyId}";
-            var localVarPathParams = new Dictionary<string, string>();
-            var localVarQueryParams = new Dictionary<string, string>();
-            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<string, string>();
-            var localVarFileParams = new Dictionary<string, FileParameter>();
-            object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            string[] localVarHttpContentTypes = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            string[] localVarHttpHeaderAccepts = new string[] {
-                "application/hal+json;charset=utf-8"
-            };
-            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-            {
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-            }
-
-            if (keyId != null)
-            {
-                localVarPathParams.Add("keyId", Configuration.ApiClient.ParameterToString(keyId)); // path parameter
-            }
-            logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -918,7 +824,102 @@ namespace CyberSource.Api
 
             return new ApiResponse<KmsV2KeysAsymGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (KmsV2KeysAsymGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymGet200Response))); // Return statement
+                (KmsV2KeysAsymGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymGet200Response))); // Return statement
+        }
+
+        /// <summary>
+        /// Retrieves PKCS12 key details Retrieves keys details by providing the key id.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="keyId">Key ID. </param>
+        /// <returns>Task of KmsV2KeysAsymGet200Response</returns>
+        public async System.Threading.Tasks.Task<KmsV2KeysAsymGet200Response> GetP12KeyDetailsAsync(string keyId)
+        {
+            logger.Debug("CALLING API \"GetP12KeyDetailsAsync\" STARTED");
+            this.SetStatusCode(null);
+            ApiResponse<KmsV2KeysAsymGet200Response> localVarResponse = await GetP12KeyDetailsAsyncWithHttpInfo(keyId);
+            logger.Debug("CALLING API \"GetP12KeyDetailsAsync\" ENDED");
+            this.SetStatusCode(localVarResponse.StatusCode);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Retrieves PKCS12 key details Retrieves keys details by providing the key id.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="keyId">Key ID. </param>
+        /// <returns>Task of ApiResponse (KmsV2KeysAsymGet200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<KmsV2KeysAsymGet200Response>> GetP12KeyDetailsAsyncWithHttpInfo(string keyId)
+        {
+            LogUtility logUtility = new LogUtility();
+
+            // verify the required parameter 'keyId' is set
+            if (keyId == null)
+            {
+                logger.Error("ApiException : Missing required parameter 'keyId' when calling AsymmetricKeyManagementApi->GetP12KeyDetails");
+                throw new ApiException(400, "Missing required parameter 'keyId' when calling AsymmetricKeyManagementApi->GetP12KeyDetails");
+            }
+
+            var localVarPath = $"/kms/v2/keys-asym/{keyId}";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new Dictionary<string, string>();
+            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+            object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            string[] localVarHttpContentTypes = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            string[] localVarHttpHeaderAccepts = new string[] {
+                "application/hal+json;charset=utf-8"
+            };
+            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+            {
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+            }
+
+            if (keyId != null)
+            {
+                localVarPathParams.Add("keyId", Configuration.ApiClient.ParameterToString(keyId)); // path parameter
+            }
+            logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
+
+
+            // make the HTTP request
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetP12KeyDetails", localVarResponse);
+                if (exception != null)
+                {
+                    logger.Error($"Exception : {exception.Message}");
+                    throw exception;
+                }
+            }
+
+            return new ApiResponse<KmsV2KeysAsymGet200Response>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (KmsV2KeysAsymGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(KmsV2KeysAsymGet200Response))); // Return statement
         }
         /// <summary>
         /// Activate or De-activate Asymmetric Key Activate or De-activate Asymmetric Key 
@@ -927,7 +928,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>Object</returns>
-        public Object UpdateAsymKey (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
+        public Object UpdateAsymKey(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
         {
             logger.Debug("CALLING API \"UpdateAsymKey\" STARTED");
             this.SetStatusCode(null);
@@ -944,7 +945,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse< Object > UpdateAsymKeyWithHttpInfo (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
+        public ApiResponse<Object> UpdateAsymKeyWithHttpInfo(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1010,11 +1011,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Patch, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1028,7 +1029,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object))); // Return statement
+                (Object)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object))); // Return statement
         }
 
         /// <summary>
@@ -1038,7 +1039,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> UpdateAsymKeyAsync (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
+        public async System.Threading.Tasks.Task<Object> UpdateAsymKeyAsync(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
         {
             logger.Debug("CALLING API \"UpdateAsymKeyAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1056,7 +1057,7 @@ namespace CyberSource.Api
         /// <param name="keyId">Key ID. </param>
         /// <param name="updateAsymKeysRequest"></param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateAsymKeyAsyncWithHttpInfo (string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateAsymKeyAsyncWithHttpInfo(string keyId, UpdateAsymKeysRequest updateAsymKeysRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1122,8 +1123,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Patch, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1140,7 +1141,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object))); // Return statement
+                (Object)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object))); // Return statement
         }
     }
 }

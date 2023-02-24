@@ -35,7 +35,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>PtsV2CreditsPost201Response</returns>
-        PtsV2CreditsPost201Response CreateCredit (CreateCreditRequest createCreditRequest);
+        PtsV2CreditsPost201Response CreateCredit(CreateCreditRequest createCreditRequest);
 
         /// <summary>
         /// Process a Credit
@@ -46,7 +46,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>ApiResponse of PtsV2CreditsPost201Response</returns>
-        ApiResponse<PtsV2CreditsPost201Response> CreateCreditWithHttpInfo (CreateCreditRequest createCreditRequest);
+        ApiResponse<PtsV2CreditsPost201Response> CreateCreditWithHttpInfo(CreateCreditRequest createCreditRequest);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -58,7 +58,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>Task of PtsV2CreditsPost201Response</returns>
-        System.Threading.Tasks.Task<PtsV2CreditsPost201Response> CreateCreditAsync (CreateCreditRequest createCreditRequest);
+        System.Threading.Tasks.Task<PtsV2CreditsPost201Response> CreateCreditAsync(CreateCreditRequest createCreditRequest);
 
         /// <summary>
         /// Process a Credit
@@ -69,7 +69,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>Task of ApiResponse (PtsV2CreditsPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PtsV2CreditsPost201Response>> CreateCreditAsyncWithHttpInfo (CreateCreditRequest createCreditRequest);
+        System.Threading.Tasks.Task<ApiResponse<PtsV2CreditsPost201Response>> CreateCreditAsyncWithHttpInfo(CreateCreditRequest createCreditRequest);
         #endregion Asynchronous Operations
     }
 
@@ -133,7 +133,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -197,7 +197,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -216,7 +216,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>PtsV2CreditsPost201Response</returns>
-        public PtsV2CreditsPost201Response CreateCredit (CreateCreditRequest createCreditRequest)
+        public PtsV2CreditsPost201Response CreateCredit(CreateCreditRequest createCreditRequest)
         {
             logger.Debug("CALLING API \"CreateCredit\" STARTED");
             this.SetStatusCode(null);
@@ -232,7 +232,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>ApiResponse of PtsV2CreditsPost201Response</returns>
-        public ApiResponse< PtsV2CreditsPost201Response > CreateCreditWithHttpInfo (CreateCreditRequest createCreditRequest)
+        public ApiResponse<PtsV2CreditsPost201Response> CreateCreditWithHttpInfo(CreateCreditRequest createCreditRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -287,107 +287,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateCredit", localVarResponse);
-                if (exception != null)
-                {
-                    logger.Error($"Exception : {exception.Message}");
-                    throw exception;
-                }
-            }
-
-            return new ApiResponse<PtsV2CreditsPost201Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PtsV2CreditsPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2CreditsPost201Response))); // Return statement
-        }
-
-        /// <summary>
-        /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createCreditRequest"></param>
-        /// <returns>Task of PtsV2CreditsPost201Response</returns>
-        public async System.Threading.Tasks.Task<PtsV2CreditsPost201Response> CreateCreditAsync (CreateCreditRequest createCreditRequest)
-        {
-            logger.Debug("CALLING API \"CreateCreditAsync\" STARTED");
-            this.SetStatusCode(null);
-            ApiResponse<PtsV2CreditsPost201Response> localVarResponse = await CreateCreditAsyncWithHttpInfo(createCreditRequest);
-            logger.Debug("CALLING API \"CreateCreditAsync\" ENDED");
-            this.SetStatusCode(localVarResponse.StatusCode);
-            return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createCreditRequest"></param>
-        /// <returns>Task of ApiResponse (PtsV2CreditsPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PtsV2CreditsPost201Response>> CreateCreditAsyncWithHttpInfo (CreateCreditRequest createCreditRequest)
-        {
-            LogUtility logUtility = new LogUtility();
-
-            // verify the required parameter 'createCreditRequest' is set
-            if (createCreditRequest == null)
-            {
-                logger.Error("ApiException : Missing required parameter 'createCreditRequest' when calling CreditApi->CreateCredit");
-                throw new ApiException(400, "Missing required parameter 'createCreditRequest' when calling CreditApi->CreateCredit");
-            }
-
-            var localVarPath = $"/pts/v2/credits";
-            var localVarPathParams = new Dictionary<string, string>();
-            var localVarQueryParams = new Dictionary<string, string>();
-            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<string, string>();
-            var localVarFileParams = new Dictionary<string, FileParameter>();
-            object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            string[] localVarHttpContentTypes = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            string[] localVarHttpHeaderAccepts = new string[] {
-                "application/hal+json;charset=utf-8"
-            };
-            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-            {
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-            }
-
-            if (createCreditRequest != null && createCreditRequest.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(createCreditRequest); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createCreditRequest; // byte array
-            }
-
-            if (logUtility.IsMaskingEnabled(logger))
-            {
-                logger.Debug($"HTTP Request Body :\n{logUtility.MaskSensitiveData(localVarPostBody.ToString())}");
-            }
-            else
-            {
-                logger.Debug($"HTTP Request Body :\n{localVarPostBody}");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -404,7 +305,106 @@ namespace CyberSource.Api
 
             return new ApiResponse<PtsV2CreditsPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PtsV2CreditsPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2CreditsPost201Response))); // Return statement
+                (PtsV2CreditsPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2CreditsPost201Response))); // Return statement
+        }
+
+        /// <summary>
+        /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createCreditRequest"></param>
+        /// <returns>Task of PtsV2CreditsPost201Response</returns>
+        public async System.Threading.Tasks.Task<PtsV2CreditsPost201Response> CreateCreditAsync(CreateCreditRequest createCreditRequest)
+        {
+            logger.Debug("CALLING API \"CreateCreditAsync\" STARTED");
+            this.SetStatusCode(null);
+            ApiResponse<PtsV2CreditsPost201Response> localVarResponse = await CreateCreditAsyncWithHttpInfo(createCreditRequest);
+            logger.Debug("CALLING API \"CreateCreditAsync\" ENDED");
+            this.SetStatusCode(localVarResponse.StatusCode);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createCreditRequest"></param>
+        /// <returns>Task of ApiResponse (PtsV2CreditsPost201Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PtsV2CreditsPost201Response>> CreateCreditAsyncWithHttpInfo(CreateCreditRequest createCreditRequest)
+        {
+            LogUtility logUtility = new LogUtility();
+
+            // verify the required parameter 'createCreditRequest' is set
+            if (createCreditRequest == null)
+            {
+                logger.Error("ApiException : Missing required parameter 'createCreditRequest' when calling CreditApi->CreateCredit");
+                throw new ApiException(400, "Missing required parameter 'createCreditRequest' when calling CreditApi->CreateCredit");
+            }
+
+            var localVarPath = $"/pts/v2/credits";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new Dictionary<string, string>();
+            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+            object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            string[] localVarHttpContentTypes = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            string[] localVarHttpHeaderAccepts = new string[] {
+                "application/hal+json;charset=utf-8"
+            };
+            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+            {
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+            }
+
+            if (createCreditRequest != null && createCreditRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(createCreditRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createCreditRequest; // byte array
+            }
+
+            if (logUtility.IsMaskingEnabled(logger))
+            {
+                logger.Debug($"HTTP Request Body :\n{logUtility.MaskSensitiveData(localVarPostBody.ToString())}");
+            }
+            else
+            {
+                logger.Debug($"HTTP Request Body :\n{localVarPostBody}");
+            }
+
+
+            // make the HTTP request
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateCredit", localVarResponse);
+                if (exception != null)
+                {
+                    logger.Error($"Exception : {exception.Message}");
+                    throw exception;
+                }
+            }
+
+            return new ApiResponse<PtsV2CreditsPost201Response>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PtsV2CreditsPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(PtsV2CreditsPost201Response))); // Return statement
         }
     }
 }

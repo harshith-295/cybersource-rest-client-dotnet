@@ -35,7 +35,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createInvoiceRequest"></param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        InvoicingV2InvoicesPost201Response CreateInvoice (CreateInvoiceRequest createInvoiceRequest);
+        InvoicingV2InvoicesPost201Response CreateInvoice(CreateInvoiceRequest createInvoiceRequest);
 
         /// <summary>
         /// Create a New Invoice
@@ -46,7 +46,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createInvoiceRequest"></param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        ApiResponse<InvoicingV2InvoicesPost201Response> CreateInvoiceWithHttpInfo (CreateInvoiceRequest createInvoiceRequest);
+        ApiResponse<InvoicingV2InvoicesPost201Response> CreateInvoiceWithHttpInfo(CreateInvoiceRequest createInvoiceRequest);
         /// <summary>
         /// Get a List of Invoices
         /// </summary>
@@ -58,7 +58,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>InvoicingV2InvoicesAllGet200Response</returns>
-        InvoicingV2InvoicesAllGet200Response GetAllInvoices (int? offset, int? limit, string status = null);
+        InvoicingV2InvoicesAllGet200Response GetAllInvoices(int? offset, int? limit, string status = null);
 
         /// <summary>
         /// Get a List of Invoices
@@ -71,7 +71,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesAllGet200Response</returns>
-        ApiResponse<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesWithHttpInfo (int? offset, int? limit, string status = null);
+        ApiResponse<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesWithHttpInfo(int? offset, int? limit, string status = null);
         /// <summary>
         /// Get Invoice Details
         /// </summary>
@@ -81,7 +81,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>InvoicingV2InvoicesGet200Response</returns>
-        InvoicingV2InvoicesGet200Response GetInvoice (string id);
+        InvoicingV2InvoicesGet200Response GetInvoice(string id);
 
         /// <summary>
         /// Get Invoice Details
@@ -92,7 +92,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesGet200Response</returns>
-        ApiResponse<InvoicingV2InvoicesGet200Response> GetInvoiceWithHttpInfo (string id);
+        ApiResponse<InvoicingV2InvoicesGet200Response> GetInvoiceWithHttpInfo(string id);
         /// <summary>
         /// Cancel an Invoice
         /// </summary>
@@ -102,7 +102,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        InvoicingV2InvoicesPost201Response PerformCancelAction (string id);
+        InvoicingV2InvoicesPost201Response PerformCancelAction(string id);
 
         /// <summary>
         /// Cancel an Invoice
@@ -113,7 +113,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        ApiResponse<InvoicingV2InvoicesPost201Response> PerformCancelActionWithHttpInfo (string id);
+        ApiResponse<InvoicingV2InvoicesPost201Response> PerformCancelActionWithHttpInfo(string id);
         /// <summary>
         /// Send an Invoice
         /// </summary>
@@ -123,7 +123,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        InvoicingV2InvoicesPost201Response PerformSendAction (string id);
+        InvoicingV2InvoicesPost201Response PerformSendAction(string id);
 
         /// <summary>
         /// Send an Invoice
@@ -134,7 +134,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        ApiResponse<InvoicingV2InvoicesPost201Response> PerformSendActionWithHttpInfo (string id);
+        ApiResponse<InvoicingV2InvoicesPost201Response> PerformSendActionWithHttpInfo(string id);
         /// <summary>
         /// Update an Invoice
         /// </summary>
@@ -145,7 +145,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        InvoicingV2InvoicesPost201Response UpdateInvoice (string id, UpdateInvoiceRequest updateInvoiceRequest);
+        InvoicingV2InvoicesPost201Response UpdateInvoice(string id, UpdateInvoiceRequest updateInvoiceRequest);
 
         /// <summary>
         /// Update an Invoice
@@ -157,7 +157,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        ApiResponse<InvoicingV2InvoicesPost201Response> UpdateInvoiceWithHttpInfo (string id, UpdateInvoiceRequest updateInvoiceRequest);
+        ApiResponse<InvoicingV2InvoicesPost201Response> UpdateInvoiceWithHttpInfo(string id, UpdateInvoiceRequest updateInvoiceRequest);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -169,7 +169,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createInvoiceRequest"></param>
         /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> CreateInvoiceAsync (CreateInvoiceRequest createInvoiceRequest);
+        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> CreateInvoiceAsync(CreateInvoiceRequest createInvoiceRequest);
 
         /// <summary>
         /// Create a New Invoice
@@ -180,7 +180,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createInvoiceRequest"></param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> CreateInvoiceAsyncWithHttpInfo (CreateInvoiceRequest createInvoiceRequest);
+        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> CreateInvoiceAsyncWithHttpInfo(CreateInvoiceRequest createInvoiceRequest);
         /// <summary>
         /// Get a List of Invoices
         /// </summary>
@@ -192,7 +192,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>Task of InvoicingV2InvoicesAllGet200Response</returns>
-        System.Threading.Tasks.Task<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesAsync (int? offset, int? limit, string status = null);
+        System.Threading.Tasks.Task<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesAsync(int? offset, int? limit, string status = null);
 
         /// <summary>
         /// Get a List of Invoices
@@ -205,7 +205,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesAllGet200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesAllGet200Response>> GetAllInvoicesAsyncWithHttpInfo (int? offset, int? limit, string status = null);
+        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesAllGet200Response>> GetAllInvoicesAsyncWithHttpInfo(int? offset, int? limit, string status = null);
         /// <summary>
         /// Get Invoice Details
         /// </summary>
@@ -215,7 +215,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of InvoicingV2InvoicesGet200Response</returns>
-        System.Threading.Tasks.Task<InvoicingV2InvoicesGet200Response> GetInvoiceAsync (string id);
+        System.Threading.Tasks.Task<InvoicingV2InvoicesGet200Response> GetInvoiceAsync(string id);
 
         /// <summary>
         /// Get Invoice Details
@@ -226,7 +226,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesGet200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesGet200Response>> GetInvoiceAsyncWithHttpInfo (string id);
+        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesGet200Response>> GetInvoiceAsyncWithHttpInfo(string id);
         /// <summary>
         /// Cancel an Invoice
         /// </summary>
@@ -236,7 +236,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformCancelActionAsync (string id);
+        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformCancelActionAsync(string id);
 
         /// <summary>
         /// Cancel an Invoice
@@ -247,7 +247,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformCancelActionAsyncWithHttpInfo (string id);
+        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformCancelActionAsyncWithHttpInfo(string id);
         /// <summary>
         /// Send an Invoice
         /// </summary>
@@ -257,7 +257,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformSendActionAsync (string id);
+        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformSendActionAsync(string id);
 
         /// <summary>
         /// Send an Invoice
@@ -268,7 +268,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformSendActionAsyncWithHttpInfo (string id);
+        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformSendActionAsyncWithHttpInfo(string id);
         /// <summary>
         /// Update an Invoice
         /// </summary>
@@ -279,7 +279,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> UpdateInvoiceAsync (string id, UpdateInvoiceRequest updateInvoiceRequest);
+        System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> UpdateInvoiceAsync(string id, UpdateInvoiceRequest updateInvoiceRequest);
 
         /// <summary>
         /// Update an Invoice
@@ -291,7 +291,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> UpdateInvoiceAsyncWithHttpInfo (string id, UpdateInvoiceRequest updateInvoiceRequest);
+        System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> UpdateInvoiceAsyncWithHttpInfo(string id, UpdateInvoiceRequest updateInvoiceRequest);
         #endregion Asynchronous Operations
     }
 
@@ -355,7 +355,7 @@ namespace CyberSource.Api
         /// <value>The base path</value>
         public string GetBasePath()
         {
-            return Configuration.ApiClient.RestClient.BaseUrl.ToString();
+            return Configuration.ApiClient.RestClient.Options.BaseUrl.ToString();
         }
 
         /// <summary>
@@ -419,7 +419,7 @@ namespace CyberSource.Api
         /// <returns>Status Code of previous request</returns>
         public int GetStatusCode()
         {
-            return this._statusCode == null ? 0 : (int) this._statusCode;
+            return this._statusCode == null ? 0 : (int)this._statusCode;
         }
 
         /// <summary>
@@ -438,7 +438,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createInvoiceRequest"></param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        public InvoicingV2InvoicesPost201Response CreateInvoice (CreateInvoiceRequest createInvoiceRequest)
+        public InvoicingV2InvoicesPost201Response CreateInvoice(CreateInvoiceRequest createInvoiceRequest)
         {
             logger.Debug("CALLING API \"CreateInvoice\" STARTED");
             this.SetStatusCode(null);
@@ -454,7 +454,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createInvoiceRequest"></param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        public ApiResponse< InvoicingV2InvoicesPost201Response > CreateInvoiceWithHttpInfo (CreateInvoiceRequest createInvoiceRequest)
+        public ApiResponse<InvoicingV2InvoicesPost201Response> CreateInvoiceWithHttpInfo(CreateInvoiceRequest createInvoiceRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -509,107 +509,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateInvoice", localVarResponse);
-                if (exception != null)
-                {
-                    logger.Error($"Exception : {exception.Message}");
-                    throw exception;
-                }
-            }
-
-            return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
-        }
-
-        /// <summary>
-        /// Create a New Invoice Create a new invoice.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createInvoiceRequest"></param>
-        /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> CreateInvoiceAsync (CreateInvoiceRequest createInvoiceRequest)
-        {
-            logger.Debug("CALLING API \"CreateInvoiceAsync\" STARTED");
-            this.SetStatusCode(null);
-            ApiResponse<InvoicingV2InvoicesPost201Response> localVarResponse = await CreateInvoiceAsyncWithHttpInfo(createInvoiceRequest);
-            logger.Debug("CALLING API \"CreateInvoiceAsync\" ENDED");
-            this.SetStatusCode(localVarResponse.StatusCode);
-            return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Create a New Invoice Create a new invoice.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createInvoiceRequest"></param>
-        /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> CreateInvoiceAsyncWithHttpInfo (CreateInvoiceRequest createInvoiceRequest)
-        {
-            LogUtility logUtility = new LogUtility();
-
-            // verify the required parameter 'createInvoiceRequest' is set
-            if (createInvoiceRequest == null)
-            {
-                logger.Error("ApiException : Missing required parameter 'createInvoiceRequest' when calling InvoicesApi->CreateInvoice");
-                throw new ApiException(400, "Missing required parameter 'createInvoiceRequest' when calling InvoicesApi->CreateInvoice");
-            }
-
-            var localVarPath = $"/invoicing/v2/invoices";
-            var localVarPathParams = new Dictionary<string, string>();
-            var localVarQueryParams = new Dictionary<string, string>();
-            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<string, string>();
-            var localVarFileParams = new Dictionary<string, FileParameter>();
-            object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            string[] localVarHttpContentTypes = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            string[] localVarHttpHeaderAccepts = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-            {
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-            }
-
-            if (createInvoiceRequest != null && createInvoiceRequest.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(createInvoiceRequest); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createInvoiceRequest; // byte array
-            }
-
-            if (logUtility.IsMaskingEnabled(logger))
-            {
-                logger.Debug($"HTTP Request Body :\n{logUtility.MaskSensitiveData(localVarPostBody.ToString())}");
-            }
-            else
-            {
-                logger.Debug($"HTTP Request Body :\n{localVarPostBody}");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -626,7 +527,106 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+        }
+
+        /// <summary>
+        /// Create a New Invoice Create a new invoice.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createInvoiceRequest"></param>
+        /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
+        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> CreateInvoiceAsync(CreateInvoiceRequest createInvoiceRequest)
+        {
+            logger.Debug("CALLING API \"CreateInvoiceAsync\" STARTED");
+            this.SetStatusCode(null);
+            ApiResponse<InvoicingV2InvoicesPost201Response> localVarResponse = await CreateInvoiceAsyncWithHttpInfo(createInvoiceRequest);
+            logger.Debug("CALLING API \"CreateInvoiceAsync\" ENDED");
+            this.SetStatusCode(localVarResponse.StatusCode);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create a New Invoice Create a new invoice.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createInvoiceRequest"></param>
+        /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> CreateInvoiceAsyncWithHttpInfo(CreateInvoiceRequest createInvoiceRequest)
+        {
+            LogUtility logUtility = new LogUtility();
+
+            // verify the required parameter 'createInvoiceRequest' is set
+            if (createInvoiceRequest == null)
+            {
+                logger.Error("ApiException : Missing required parameter 'createInvoiceRequest' when calling InvoicesApi->CreateInvoice");
+                throw new ApiException(400, "Missing required parameter 'createInvoiceRequest' when calling InvoicesApi->CreateInvoice");
+            }
+
+            var localVarPath = $"/invoicing/v2/invoices";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new Dictionary<string, string>();
+            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+            object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            string[] localVarHttpContentTypes = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            string[] localVarHttpHeaderAccepts = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+            {
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+            }
+
+            if (createInvoiceRequest != null && createInvoiceRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(createInvoiceRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createInvoiceRequest; // byte array
+            }
+
+            if (logUtility.IsMaskingEnabled(logger))
+            {
+                logger.Debug($"HTTP Request Body :\n{logUtility.MaskSensitiveData(localVarPostBody.ToString())}");
+            }
+            else
+            {
+                logger.Debug($"HTTP Request Body :\n{localVarPostBody}");
+            }
+
+
+            // make the HTTP request
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateInvoice", localVarResponse);
+                if (exception != null)
+                {
+                    logger.Error($"Exception : {exception.Message}");
+                    throw exception;
+                }
+            }
+
+            return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
         }
         /// <summary>
         /// Get a List of Invoices Get a list of invoices.
@@ -636,7 +636,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>InvoicingV2InvoicesAllGet200Response</returns>
-        public InvoicingV2InvoicesAllGet200Response GetAllInvoices (int? offset, int? limit, string status = null)
+        public InvoicingV2InvoicesAllGet200Response GetAllInvoices(int? offset, int? limit, string status = null)
         {
             logger.Debug("CALLING API \"GetAllInvoices\" STARTED");
             this.SetStatusCode(null);
@@ -654,7 +654,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesAllGet200Response</returns>
-        public ApiResponse< InvoicingV2InvoicesAllGet200Response > GetAllInvoicesWithHttpInfo (int? offset, int? limit, string status = null)
+        public ApiResponse<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesWithHttpInfo(int? offset, int? limit, string status = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -710,22 +710,22 @@ namespace CyberSource.Api
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -739,7 +739,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesAllGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesAllGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesAllGet200Response))); // Return statement
+                (InvoicingV2InvoicesAllGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesAllGet200Response))); // Return statement
         }
 
         /// <summary>
@@ -750,7 +750,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>Task of InvoicingV2InvoicesAllGet200Response</returns>
-        public async System.Threading.Tasks.Task<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesAsync (int? offset, int? limit, string status = null)
+        public async System.Threading.Tasks.Task<InvoicingV2InvoicesAllGet200Response> GetAllInvoicesAsync(int? offset, int? limit, string status = null)
         {
             logger.Debug("CALLING API \"GetAllInvoicesAsync\" STARTED");
             this.SetStatusCode(null);
@@ -769,7 +769,7 @@ namespace CyberSource.Api
         /// <param name="limit">Maximum number of items you would like returned.</param>
         /// <param name="status">The status of the invoice.  Possible values:   - DRAFT   - CREATED   - SENT   - PARTIAL   - PAID   - CANCELED  (optional)</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesAllGet200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesAllGet200Response>> GetAllInvoicesAsyncWithHttpInfo (int? offset, int? limit, string status = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesAllGet200Response>> GetAllInvoicesAsyncWithHttpInfo(int? offset, int? limit, string status = null)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -825,19 +825,19 @@ namespace CyberSource.Api
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarQueryParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -854,7 +854,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesAllGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesAllGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesAllGet200Response))); // Return statement
+                (InvoicingV2InvoicesAllGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesAllGet200Response))); // Return statement
         }
         /// <summary>
         /// Get Invoice Details Get the details of a specific invoice.
@@ -862,7 +862,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>InvoicingV2InvoicesGet200Response</returns>
-        public InvoicingV2InvoicesGet200Response GetInvoice (string id)
+        public InvoicingV2InvoicesGet200Response GetInvoice(string id)
         {
             logger.Debug("CALLING API \"GetInvoice\" STARTED");
             this.SetStatusCode(null);
@@ -878,7 +878,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesGet200Response</returns>
-        public ApiResponse< InvoicingV2InvoicesGet200Response > GetInvoiceWithHttpInfo (string id)
+        public ApiResponse<InvoicingV2InvoicesGet200Response> GetInvoiceWithHttpInfo(string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -918,22 +918,22 @@ namespace CyberSource.Api
                 localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -947,7 +947,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesGet200Response))); // Return statement
+                (InvoicingV2InvoicesGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesGet200Response))); // Return statement
         }
 
         /// <summary>
@@ -956,7 +956,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of InvoicingV2InvoicesGet200Response</returns>
-        public async System.Threading.Tasks.Task<InvoicingV2InvoicesGet200Response> GetInvoiceAsync (string id)
+        public async System.Threading.Tasks.Task<InvoicingV2InvoicesGet200Response> GetInvoiceAsync(string id)
         {
             logger.Debug("CALLING API \"GetInvoiceAsync\" STARTED");
             this.SetStatusCode(null);
@@ -973,7 +973,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesGet200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesGet200Response>> GetInvoiceAsyncWithHttpInfo (string id)
+        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesGet200Response>> GetInvoiceAsyncWithHttpInfo(string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1013,19 +1013,19 @@ namespace CyberSource.Api
                 localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.GET == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Get == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Get, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1042,7 +1042,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesGet200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesGet200Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesGet200Response))); // Return statement
+                (InvoicingV2InvoicesGet200Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesGet200Response))); // Return statement
         }
         /// <summary>
         /// Cancel an Invoice Cancel an invoice.
@@ -1050,7 +1050,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        public InvoicingV2InvoicesPost201Response PerformCancelAction (string id)
+        public InvoicingV2InvoicesPost201Response PerformCancelAction(string id)
         {
             logger.Debug("CALLING API \"PerformCancelAction\" STARTED");
             this.SetStatusCode(null);
@@ -1066,7 +1066,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        public ApiResponse< InvoicingV2InvoicesPost201Response > PerformCancelActionWithHttpInfo (string id)
+        public ApiResponse<InvoicingV2InvoicesPost201Response> PerformCancelActionWithHttpInfo(string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1106,22 +1106,22 @@ namespace CyberSource.Api
                 localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.POST == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Post == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1135,7 +1135,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
         }
 
         /// <summary>
@@ -1144,7 +1144,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformCancelActionAsync (string id)
+        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformCancelActionAsync(string id)
         {
             logger.Debug("CALLING API \"PerformCancelActionAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1161,7 +1161,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformCancelActionAsyncWithHttpInfo (string id)
+        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformCancelActionAsyncWithHttpInfo(string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1201,19 +1201,19 @@ namespace CyberSource.Api
                 localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.POST == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Post == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1230,7 +1230,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
         }
         /// <summary>
         /// Send an Invoice Send an invoice.
@@ -1238,7 +1238,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        public InvoicingV2InvoicesPost201Response PerformSendAction (string id)
+        public InvoicingV2InvoicesPost201Response PerformSendAction(string id)
         {
             logger.Debug("CALLING API \"PerformSendAction\" STARTED");
             this.SetStatusCode(null);
@@ -1254,7 +1254,7 @@ namespace CyberSource.Api
         /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The invoice number.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        public ApiResponse< InvoicingV2InvoicesPost201Response > PerformSendActionWithHttpInfo (string id)
+        public ApiResponse<InvoicingV2InvoicesPost201Response> PerformSendActionWithHttpInfo(string id)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1294,114 +1294,19 @@ namespace CyberSource.Api
                 localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             }
             logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.POST == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
+            //if (Method.Post == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("PerformSendAction", localVarResponse);
-                if (exception != null)
-                {
-                    logger.Error($"Exception : {exception.Message}");
-                    throw exception;
-                }
-            }
-
-            return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
-        }
-
-        /// <summary>
-        /// Send an Invoice Send an invoice.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">The invoice number.</param>
-        /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformSendActionAsync (string id)
-        {
-            logger.Debug("CALLING API \"PerformSendActionAsync\" STARTED");
-            this.SetStatusCode(null);
-            ApiResponse<InvoicingV2InvoicesPost201Response> localVarResponse = await PerformSendActionAsyncWithHttpInfo(id);
-            logger.Debug("CALLING API \"PerformSendActionAsync\" ENDED");
-            this.SetStatusCode(localVarResponse.StatusCode);
-            return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Send an Invoice Send an invoice.
-        /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">The invoice number.</param>
-        /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformSendActionAsyncWithHttpInfo (string id)
-        {
-            LogUtility logUtility = new LogUtility();
-
-            // verify the required parameter 'id' is set
-            if (id == null)
-            {
-                logger.Error("ApiException : Missing required parameter 'id' when calling InvoicesApi->PerformSendAction");
-                throw new ApiException(400, "Missing required parameter 'id' when calling InvoicesApi->PerformSendAction");
-            }
-
-            var localVarPath = $"/invoicing/v2/invoices/{id}/delivery";
-            var localVarPathParams = new Dictionary<string, string>();
-            var localVarQueryParams = new Dictionary<string, string>();
-            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<string, string>();
-            var localVarFileParams = new Dictionary<string, FileParameter>();
-            object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            string[] localVarHttpContentTypes = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            string[] localVarHttpHeaderAccepts = new string[] {
-                "application/json;charset=utf-8"
-            };
-            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-            {
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-            }
-
-            if (id != null)
-            {
-                localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
-            }
-            logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
-            if (Method.POST == Method.POST)
-            {
-                localVarPostBody = "{}";
-            }
-            else
-            {
-                localVarPostBody = null;
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1418,7 +1323,102 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+        }
+
+        /// <summary>
+        /// Send an Invoice Send an invoice.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">The invoice number.</param>
+        /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
+        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> PerformSendActionAsync(string id)
+        {
+            logger.Debug("CALLING API \"PerformSendActionAsync\" STARTED");
+            this.SetStatusCode(null);
+            ApiResponse<InvoicingV2InvoicesPost201Response> localVarResponse = await PerformSendActionAsyncWithHttpInfo(id);
+            logger.Debug("CALLING API \"PerformSendActionAsync\" ENDED");
+            this.SetStatusCode(localVarResponse.StatusCode);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Send an Invoice Send an invoice.
+        /// </summary>
+        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">The invoice number.</param>
+        /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> PerformSendActionAsyncWithHttpInfo(string id)
+        {
+            LogUtility logUtility = new LogUtility();
+
+            // verify the required parameter 'id' is set
+            if (id == null)
+            {
+                logger.Error("ApiException : Missing required parameter 'id' when calling InvoicesApi->PerformSendAction");
+                throw new ApiException(400, "Missing required parameter 'id' when calling InvoicesApi->PerformSendAction");
+            }
+
+            var localVarPath = $"/invoicing/v2/invoices/{id}/delivery";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new Dictionary<string, string>();
+            var localVarHeaderParams = new Dictionary<string, string>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+            object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            string[] localVarHttpContentTypes = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            string[] localVarHttpHeaderAccepts = new string[] {
+                "application/json;charset=utf-8"
+            };
+            string localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+            {
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+            }
+
+            if (id != null)
+            {
+                localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            }
+            logger.Debug($"HTTP Request Body :\n{logUtility.ConvertDictionaryToString(localVarPathParams)}");
+            //if (Method.Post == Method.Post)
+            //{
+            //    localVarPostBody = "{}";
+            //}
+            //else
+            //{
+            //    localVarPostBody = null;
+            //}
+
+
+            // make the HTTP request
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Post, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PerformSendAction", localVarResponse);
+                if (exception != null)
+                {
+                    logger.Error($"Exception : {exception.Message}");
+                    throw exception;
+                }
+            }
+
+            return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
         }
         /// <summary>
         /// Update an Invoice Update an invoice.
@@ -1427,7 +1427,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>InvoicingV2InvoicesPost201Response</returns>
-        public InvoicingV2InvoicesPost201Response UpdateInvoice (string id, UpdateInvoiceRequest updateInvoiceRequest)
+        public InvoicingV2InvoicesPost201Response UpdateInvoice(string id, UpdateInvoiceRequest updateInvoiceRequest)
         {
             logger.Debug("CALLING API \"UpdateInvoice\" STARTED");
             this.SetStatusCode(null);
@@ -1444,7 +1444,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>ApiResponse of InvoicingV2InvoicesPost201Response</returns>
-        public ApiResponse< InvoicingV2InvoicesPost201Response > UpdateInvoiceWithHttpInfo (string id, UpdateInvoiceRequest updateInvoiceRequest)
+        public ApiResponse<InvoicingV2InvoicesPost201Response> UpdateInvoiceWithHttpInfo(string id, UpdateInvoiceRequest updateInvoiceRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1510,11 +1510,11 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.Put, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1528,7 +1528,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
         }
 
         /// <summary>
@@ -1538,7 +1538,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>Task of InvoicingV2InvoicesPost201Response</returns>
-        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> UpdateInvoiceAsync (string id, UpdateInvoiceRequest updateInvoiceRequest)
+        public async System.Threading.Tasks.Task<InvoicingV2InvoicesPost201Response> UpdateInvoiceAsync(string id, UpdateInvoiceRequest updateInvoiceRequest)
         {
             logger.Debug("CALLING API \"UpdateInvoiceAsync\" STARTED");
             this.SetStatusCode(null);
@@ -1556,7 +1556,7 @@ namespace CyberSource.Api
         /// <param name="id">The invoice number.</param>
         /// <param name="updateInvoiceRequest">Updating the invoice does not resend the invoice automatically. You must resend the invoice separately.</param>
         /// <returns>Task of ApiResponse (InvoicingV2InvoicesPost201Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> UpdateInvoiceAsyncWithHttpInfo (string id, UpdateInvoiceRequest updateInvoiceRequest)
+        public async System.Threading.Tasks.Task<ApiResponse<InvoicingV2InvoicesPost201Response>> UpdateInvoiceAsyncWithHttpInfo(string id, UpdateInvoiceRequest updateInvoiceRequest)
         {
             LogUtility logUtility = new LogUtility();
 
@@ -1622,8 +1622,8 @@ namespace CyberSource.Api
 
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+            RestResponse localVarResponse = (RestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.Put, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
             int localVarStatusCode = (int)localVarResponse.StatusCode;
@@ -1640,7 +1640,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<InvoicingV2InvoicesPost201Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InvoicingV2InvoicesPost201Response) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
+                (InvoicingV2InvoicesPost201Response)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InvoicingV2InvoicesPost201Response))); // Return statement
         }
     }
 }
