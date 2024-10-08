@@ -357,18 +357,24 @@ namespace CyberSource.Client
                     path, method, queryParams, postBody, headerParams, formParams, fileParams,
                     pathParams, contentType);
 
+                var options = new RestClientOptions();
+
                 // set timeout
                 //RestClient.Timeout = Configuration.Timeout;
-                RestClient.Options.MaxTimeout = Configuration.Timeout;
+                //RestClient.Options.MaxTimeout = Configuration.Timeout;
+                options.Timeout = TimeSpan.FromMilliseconds(Configuration.Timeout);
+
                 // set user agent
                 //RestClient.UserAgent = Configuration.UserAgent;
-                RestClient.Options.UserAgent = Configuration.UserAgent;
+                //RestClient.Options.UserAgent = Configuration.UserAgent;
+                options.UserAgent = Configuration.UserAgent;
 
                 //RestClient.ClearHandlers();
 
                 if (Configuration.Proxy != null)
                 {
-                    RestClient.Options.Proxy = Configuration.Proxy;
+                    //RestClient.Options.Proxy = Configuration.Proxy;
+                    options.Proxy = Configuration.Proxy;
                 }
 
                 // Adding Client Cert
@@ -380,7 +386,8 @@ namespace CyberSource.Client
                     string fileName = Path.Combine(clientCertDirectory, clientCertFile);
                     // Importing Certificates
                     var certificate = new X509Certificate2(fileName, clientCertPassword);
-                    RestClient.Options.ClientCertificates = new X509CertificateCollection { certificate };
+                    //RestClient.Options.ClientCertificates = new X509CertificateCollection { certificate };
+                    options.ClientCertificates = new X509CertificateCollection { certificate };
                 }
 
                 // Logging Request Headers
@@ -403,6 +410,7 @@ namespace CyberSource.Client
                 }
 
                 InterceptRequest(request);
+                RestClient = new RestClient(options);
                 response = (RestResponse)RestClient.Execute(request);
                 InterceptResponse(request, response);
             }
@@ -962,12 +970,13 @@ namespace CyberSource.Client
 
             //Set the Configuration
             Configuration.DefaultHeader = authenticationHeaders;
-            RestClient = new RestClient("https://" + merchantConfig.HostName);
 
+            var options = new RestClientOptions("https://" + merchantConfig.HostName);
             if (Configuration.Proxy != null)
             {
-                RestClient.Options.Proxy = Configuration.Proxy;
+                options.Proxy = Configuration.Proxy;
             }
+            RestClient = new RestClient(options);
         }
     }
 }

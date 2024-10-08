@@ -153,7 +153,7 @@ namespace CyberSource.Client
             set
             {
                 if (ApiClient != null)
-                    ApiClient.RestClient.Options.MaxTimeout = value;
+                    ApiClient.RestClient = new RestSharp.RestClient(new RestSharp.RestClientOptions() { Timeout = TimeSpan.FromMilliseconds(value) });
             }
         }
 
